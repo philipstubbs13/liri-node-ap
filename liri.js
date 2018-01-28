@@ -106,6 +106,7 @@ function getLatestTweets(){
 		access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 	});
 
+	//Parameters. Show the tweets from iamPhilStubbs timeline. Limit to the last 20 tweets.
 	var params = {screen_name: 'iamPhilStubbs', limit: 20};
 	client.get('statuses/user_timeline', params, function(error, tweets, response) {
 	  if (!error) {
@@ -113,14 +114,14 @@ function getLatestTweets(){
 	    //Show last 20 tweets from my timeline.
 	    console.log("My last 20 tweets");
 	    for (var i=0; i < tweets.length; i ++) {
-	    	console.log("================================================================================")
+	    	console.log("============================================================================================================================");
 	    	//Display tweet number for each tweet. For example, the first tweet returned will be tweet #1, the second returned will be tweet #2, etc.
 	    	console.log("Tweet #" + (i+1));
 	    	//Output the tweet text from Twitter to the terminal.
 	    	console.log("Tweet: " + tweets[i].text);
 	    	//Output the date/time when the tweet was created to the terminal.
 	    	console.log("Created at: " + tweets[i].created_at);
-	    	console.log("================================================================================")
+	    	console.log("============================================================================================================================");
 	    }
 	  }
 	});
