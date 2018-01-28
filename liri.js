@@ -3,10 +3,12 @@ require("dotenv").config();
 
 //To retrieve the data that will power this app, we'll need to send requests to the Twitter, Spotify and OMDB APIs. 
 //Grab the Node packages.
-//Grab the request package.
+//Grab the request package to send requests to the OMDB API.
 var request = require("request");
-//Grab the Spotify package.
+//Grab the Spotify package to send requests to the Spotify API.
 var Spotify = require('node-spotify-api');
+//Grap the Twitter package to send requests to the Twitter API.
+var Twitter = require('twitter');
 
 //Using the require keyword, let's access all of the keys in the keys.js file
 var keys = require("./keys.js");
@@ -95,13 +97,32 @@ function getMovieInfo() {
 
 //Get tweets function... Run this function to get last 20 tweets and when they were created.
 function getLatestTweets(){
-	request("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=iamPhilStubbs&count=20", function(error, response, body) {
-		//If the request is successful (i.e. if the response status code is 200)
-		if (!error && response.statusCode === 200) {
-			//Parse the body of the JSON object that holds the tweet info and display the info.
-			var tweetInfo = JSON.parse(body);
-			console.log(tweetInfo);
-		}
+
+	//Code to access Twitter keys information.
+	var client = new Twitter({
+		consumer_key: process.env.TWITTER_CONSUMER_KEY,
+		consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+		access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+		access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+	});
+
+	var params = {screen_name: 'iamPhilStubbs', limit: 20};
+	client.get('statuses/user_timeline', params, function(error, tweets, response) {
+	  if (!error) {
+	    //console.log(tweets);
+	    //Show last 20 tweets from my timeline.
+	    console.log("My last 20 tweets");
+	    for (var i=0; i < tweets.length; i ++) {
+	    	console.log("================================================================================")
+	    	//Display tweet number for each tweet. For example, the first tweet returned will be tweet #1, the second returned will be tweet #2, etc.
+	    	console.log("Tweet #" + (i+1));
+	    	//Output the tweet text from Twitter to the terminal.
+	    	console.log("Tweet: " + tweets[i].text);
+	    	//Output the date/time when the tweet was created to the terminal.
+	    	console.log("Created at: " + tweets[i].created_at);
+	    	console.log("================================================================================")
+	    }
+	  }
 	});
 }
 
