@@ -36,7 +36,6 @@ var songName = input[3];
 //Output information about that movie.
 if (liriCommand === "movie-this") {
 	//log liriCommand to log.txt.
-	logData("=======================================================================================================");
 	logData("liri command: movie-this");
 	logData("Movie name: " + movieName);
 	getMovieInfo();
@@ -128,15 +127,20 @@ function getLatestTweets(){
 	    //console.log(tweets);
 	    //Show last 20 tweets from my timeline.
 	    console.log("My last 20 tweets");
+	    logData("My last 20 tweets");
 	    for (var i=0; i < tweets.length; i ++) {
 	    	console.log("============================================================================================================================");
 	    	//Display tweet number for each tweet. For example, the first tweet returned will be tweet #1, the second returned will be tweet #2, etc.
 	    	console.log("Tweet #" + (i+1));
+	    	logData("Tweet #" + (i+1));
 	    	//Output the tweet text from Twitter to the terminal.
 	    	console.log("Tweet: " + tweets[i].text);
+	    	logData("Tweet: " + tweets[i].text);
 	    	//Output the date/time when the tweet was created to the terminal.
 	    	console.log("Created at: " + tweets[i].created_at);
+	    	logData("Created at: " + tweets[i].created_at);
 	    	console.log("============================================================================================================================");
+	    	logData("=======================================================================================================");
 	    }
 	  }
 	});
@@ -216,9 +220,9 @@ function getSongInfo(songName) {
 		//Append album name to log.txt file.
 		logData("Album: " + trackInfo.album.name);
 		console.log("========================================================================================================================================");
-		logData("========================================================================================================================================");
 		}
 	}
+	logData("=======================================================================================================");
 	});
 }
 
