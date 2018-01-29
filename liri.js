@@ -35,21 +35,31 @@ var songName = input[3];
 //If the liriCommand is movie-this and a movieName is provided...
 //Output information about that movie.
 if (liriCommand === "movie-this") {
+	//log liriCommand to log.txt.
+	logData("=======================================================================================================");
+	logData("liri command: movie-this");
+	logData("Movie name: " + movieName);
 	getMovieInfo();
 }
 
 //If the liriCommand is my-tweets, show last 20 tweets and when they were created in terminal window.
 if (liriCommand === "my-tweets") {
+	//log liriCommand to log.txt.
+	logData("liri command: my-tweets");
 	getLatestTweets();
 }
 
 //If the liriCommand is spotify-this-song, show song info for the specified song.
 if (liriCommand === "spotify-this-song") {
+	//log liriCommand to log.txt.
+	logData("liri command: spotify-this-song");
 	getSongInfo(songName);
 }
 
 //If the liriCommand is do-what-it-says, take the text inside of random.txt and then use it to run spotify-this-song for "I want it that way."
 if (liriCommand === "do-what-it-says") {
+	//log liriCommand to log.txt.
+	logData("liri command: do-what-it-says");
 	doWhatItSays();
 }
 
@@ -73,20 +83,29 @@ function getMovieInfo() {
 			//Output the following information to terminal window.
 			//Title of the movie.
 			console.log("Title: " + movieInfo.Title);
+			logData("Title: " + movieInfo.Title);
 		   	//Year the movie came out.
 		   	console.log("Year movie was released: " + movieInfo.Year);
+		   	logData("Year movie was released: " + movieInfo.Year);
 		   	//IMDB Rating of the movie.
 		   	console.log("IMDB movie rating (out of 10): " + movieInfo.imdbRating);
+		   	logData("IMDB movie rating (out of 10): " + movieInfo.imdbRating);
 		   	//Rotten Tomatoes rating of the movie.
 		   	console.log("Rotten Tomatoes rating (out of 100%): " + movieInfo.Ratings[1].Value);
+		   	logData("Rotten Tomatoes rating (out of 100%): " + movieInfo.Ratings[1].Value);
 		   	//Country where the movie was produced.
 		   	console.log("Filmed in: " + movieInfo.Country);
+		   	logData("Filmed in: " + movieInfo.Country);
 		   	//Language of the movie.
 		   	console.log("Language: " + movieInfo.Language);
+		   	logData("Language: " + movieInfo.Language);
 		   	//Plot of the movie.
 		   	console.log("Movie plot: " + movieInfo.Plot);
+		   	logData("Movie plot: " + movieInfo.Plot);
 		   	//Actors in the movie.
 		   	console.log("Actors: " + movieInfo.Actors);
+		   	logData("Actors: " + movieInfo.Actors);
+		   	logData("=======================================================================================================");
 		}
 	});
 }
@@ -140,6 +159,7 @@ function getSongInfo(songName) {
 
 	//Use the Spotify package to search for a song/track. Set search results limit to 10.
 	spotify.search({ type: 'track', query: songName, limit: 10 }, function(err, data) {
+
   
   		//If there is an error, log it.
   		if (err) {
@@ -156,6 +176,7 @@ function getSongInfo(songName) {
 	if (songName === "The Sign") {
 		//Output the artist
 		console.log("Artist: " + data.tracks.items[5].artists[0].name);
+		logResults = 
 		//Output the song's name.
 		console.log("Song title: " + data.tracks.items[5].name)
 		//Output a preview link of the song from Spotify.
@@ -168,20 +189,34 @@ function getSongInfo(songName) {
 	//If song name is provided, output first 10 songs with that name to the terminal.
 	else {
 		console.log("Top 10 songs on Spotify with the name, " + songName);
+		logData("Top 10 songs on Spotify with the name, " + songName);
 		//Loop through the JSON data to display the top songs.
 		for (var i = 0; i < data.tracks.items.length; i ++) {
+		var trackInfo = data.tracks.items[i];
 		console.log("========================================================================================================================================");
+		logData("========================================================================================================================================");
 		//Display song number for each song. For example, the first song returned will be Song #1, the second returned will be Song #2, etc.
 		console.log("Song #" + (i+1));
+		//append song # to log.txt file.
+		logData("Song #" + (i+1));
 		//Output the artist
-		console.log("Artist: " + data.tracks.items[i].artists[0].name);
+		console.log("Artist: " + trackInfo.artists[0].name);
+		//Append artist to log.txt file.
+		logData("Artist: " + trackInfo.artists[0].name);
 		//Output the song's name.
-		console.log("Song title: " + data.tracks.items[i].name)
+		console.log("Song title: " + trackInfo.name)
+		//Append song name to log.txt file.
+		logData("Song title: " + trackInfo.name);
 		//Output a preview link of the song from Spotify.
-		console.log("Preview song: " + data.tracks.items[i].preview_url);
+		console.log("Preview song: " + trackInfo.preview_url);
+		//Append preview link of song to log.txt file.
+		logData("Preview song: " + trackInfo.preview_url);
 		//Output the album that the song is from.
-		console.log("Album: " + data.tracks.items[i].album.name);
+		console.log("Album: " + trackInfo.album.name);
+		//Append album name to log.txt file.
+		logData("Album: " + trackInfo.album.name);
 		console.log("========================================================================================================================================");
+		logData("========================================================================================================================================");
 		}
 	}
 	});
@@ -209,4 +244,23 @@ function doWhatItSays() {
   		//Call the getSongInfo function to display the song info for "I want it that way."
   		getSongInfo(songdataArray[1]);
  	});
+}
+
+//Bonus: In addition to logging the data to the terminal/bash window, output the data to a .txt file called log.txt.
+function logData(logResults) {
+	// We then append the contents into the file
+	// If the file didn't exist then it gets created on the fly.
+	fs.appendFile("log.txt", logResults + "\r\n" , function(err) {
+
+	// If an error was experienced we say it.
+	if (err) {
+		console.log(err);
+	}
+
+	// If no error is experienced, we'll log the phrase "Content Added" to our node console.
+	else {
+		//console.log("Content Added!");
+	}
+});
+
 }
