@@ -48,49 +48,37 @@ if (liriCommand === "spotify-this-song") {
 //Get movie info function... Run this function to get movie info for the specified movie.
 function getMovieInfo() {
 
-	//Then, run a request to the OMDB API with the movieName the user enters.
-	request("http://www.omdbapi.com/?t=" + movieName + "&apikey=trilogy", function(error, response, body) {
+	//If no movie name is specified on the command line, then show the movie info for the movie, Mr. Nobody.
+	if (!movieName) {
+		//If no movie is specified, set movieName equal to Mr. Nobody.
+		movieName = "Mr Nobody";
+	}
 
-		//Create variable to hold all the movie info that we will output to the console.
-		//Parse the body of the JSON object that holds the movie data and display the movie info.
-		var movieInfo = JSON.parse(body);
-		//Title of movie
-		var movieTitle = "Title: " + movieInfo.Title;
-		//Year the movie came out.
-		var movieYear = "Year movie was released: " + movieInfo.Year;
-		//IMDB Rating of the movie.
-		var IMDBRating = "IMDB movie rating (out of 10): " + movieInfo.imdbRating;
-		//Rotten Tomatoes rating of the movie.
-		var rottenTomatoes = "Rotten Tomatoes rating (out of 100%): " + movieInfo.Ratings[1].Value;
-		//Country where the movie was produced.
-		var countryProduced = "Filmed in: " + movieInfo.Country;
-		//Language of the movie.
-		var movieLanguage = "Language: " + movieInfo.Language;
-		//Plot of the movie.
-		var moviePlot = "Movie plot: " + movieInfo.Plot;
-		//Actors in the movie.
-		var movieActors = "Actors: " + movieInfo.Actors;
+	//Then, run a request to the OMDB API with the movieName value.
+	request("http://www.omdbapi.com/?t=" + movieName + "&apikey=trilogy", function(error, response, body) {
 
 		//If the request is successful (i.e. if the response status code is 200)
 		if (!error && response.statusCode === 200) {
-			//console.log(JSON.parse(body));
+			//Parse the body of the JSON object that holds the movie data and display the movie info.
+			var movieInfo = JSON.parse(body);
+			//console.log(movieInfo);
 			//Output the following information to terminal window.
 			//Title of the movie.
-			console.log(movieTitle);
+			console.log("Title: " + movieInfo.Title);
 		   	//Year the movie came out.
-		   	console.log(movieYear);
+		   	console.log("Year movie was released: " + movieInfo.Year);
 		   	//IMDB Rating of the movie.
-		   	console.log(IMDBRating);
+		   	console.log("IMDB movie rating (out of 10): " + movieInfo.imdbRating);
 		   	//Rotten Tomatoes rating of the movie.
-		   	console.log(rottenTomatoes);
+		   	console.log("Rotten Tomatoes rating (out of 100%): " + movieInfo.Ratings[1].Value);
 		   	//Country where the movie was produced.
-		   	console.log(countryProduced);
+		   	console.log("Filmed in: " + movieInfo.Country);
 		   	//Language of the movie.
-		   	console.log(movieLanguage);
+		   	console.log("Language: " + movieInfo.Language);
 		   	//Plot of the movie.
-		   	console.log(moviePlot);
+		   	console.log("Movie plot: " + movieInfo.Plot);
 		   	//Actors in the movie.
-		   	console.log(movieActors);
+		   	console.log("Actors: " + movieInfo.Actors);
 		}
 	});
 }
