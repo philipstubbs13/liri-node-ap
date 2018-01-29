@@ -94,7 +94,7 @@ function getLatestTweets(){
 		access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 	});
 
-	//Parameters. Show the tweets from iamPhilStubbs timeline. Limit to the last 20 tweets.
+	//Parameters. Show the tweets from iamPhilStubbs timeline (my timeline). Limit to the last 20 tweets.
 	var params = {screen_name: 'iamPhilStubbs', limit: 20};
 	client.get('statuses/user_timeline', params, function(error, tweets, response) {
 	  if (!error) {
@@ -124,6 +124,12 @@ function getSongInfo() {
   		secret: process.env.SPOTIFY_SECRET
 	});
 
+	//If no song name is specified on the command line, show song info for "The Sign" by Ace of Base.
+	if (!songName) {
+		//If no song is specified, set the songName variable to "The Sign."
+		songName = "The Sign";
+	}
+
 	//Use the Spotify package to search for a song/track. Set search results limit to 10.
 	spotify.search({ type: 'track', query: songName, limit: 10 }, function(err, data) {
   
@@ -138,20 +144,35 @@ function getSongInfo() {
   	// See link here: http://stackoverflow.com/questions/4810841/how-can-i-pretty-print-json-using-javascript
 	//console.log(JSON.stringify(data, null, 2)); 
 
-	//Loop through the JSON data to display the top songs.
-	for (var i = 0; i < data.tracks.items.length; i ++) {
-	console.log("========================================================================================================================================");
-	//Display song number for each song. For example, the first song returned will be Song #1, the second returned will be Song #2, etc.
-	console.log("Song #" + (i+1));
-	//Output the artist
-	console.log("Artist: " + data.tracks.items[i].artists[0].name);
-	//Output the song's name.
-	console.log("Song title: " + data.tracks.items[i].name)
-	//Output a preview link of the song from Spotify.
-	console.log("Preview song: " + data.tracks.items[i].preview_url);
-	//Output the album that the song is from.
-	console.log("Album: " + data.tracks.items[i].album.name);
-	console.log("========================================================================================================================================");
+	//If no song is provided, then the app will default to "The Sign" by Ace of Base.
+	if (songName === "The Sign") {
+		//Output the artist
+		console.log("Artist: " + data.tracks.items[5].artists[0].name);
+		//Output the song's name.
+		console.log("Song title: " + data.tracks.items[5].name)
+		//Output a preview link of the song from Spotify.
+		console.log("Preview song: " + data.tracks.items[5].preview_url);
+		//Output the album that the song is from.
+		console.log("Album: " + data.tracks.items[5].album.name);
+	}
+
+	//If song name is provided, output first 10 songs with that name to the terminal.
+	else {
+		//Loop through the JSON data to display the top songs.
+		for (var i = 0; i < data.tracks.items.length; i ++) {
+		console.log("========================================================================================================================================");
+		//Display song number for each song. For example, the first song returned will be Song #1, the second returned will be Song #2, etc.
+		console.log("Song #" + (i+1));
+		//Output the artist
+		console.log("Artist: " + data.tracks.items[i].artists[0].name);
+		//Output the song's name.
+		console.log("Song title: " + data.tracks.items[i].name)
+		//Output a preview link of the song from Spotify.
+		console.log("Preview song: " + data.tracks.items[i].preview_url);
+		//Output the album that the song is from.
+		console.log("Album: " + data.tracks.items[i].album.name);
+		console.log("========================================================================================================================================");
+		}
 	}
 	});
 }
