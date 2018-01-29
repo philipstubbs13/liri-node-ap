@@ -10,6 +10,9 @@ var Spotify = require('node-spotify-api');
 //Grap the Twitter package to send requests to the Twitter API.
 var Twitter = require('twitter');
 
+// fs is a core Node package for reading and writing files
+var fs = require("fs");
+
 //Using the require keyword, let's access all of the keys in the keys.js file
 var keys = require("./keys.js");
 
@@ -42,7 +45,12 @@ if (liriCommand === "my-tweets") {
 
 //If the liriCommand is spotify-this-song, show song info for the specified song.
 if (liriCommand === "spotify-this-song") {
-	getSongInfo();
+	getSongInfo(songName);
+}
+
+//If the liriCommand is do-what-it-says, take the text inside of random.txt and then use it to run spotify-this-song for "I want it that way."
+if (liriCommand === "do-what-it-says") {
+	doWhatItSays();
 }
 
 //Get movie info function... Run this function to get movie info for the specified movie.
@@ -116,7 +124,7 @@ function getLatestTweets(){
 }
 
 //Get song info function... Run this function to get information about the specified song.
-function getSongInfo() {
+function getSongInfo(songName) {
 
 	//var spotify = new Spotify(keys.spotify);
 	var spotify = new Spotify({
@@ -156,8 +164,10 @@ function getSongInfo() {
 		console.log("Album: " + data.tracks.items[5].album.name);
 	}
 
+
 	//If song name is provided, output first 10 songs with that name to the terminal.
 	else {
+		console.log("Top 10 songs on Spotify with the name, " + songName);
 		//Loop through the JSON data to display the top songs.
 		for (var i = 0; i < data.tracks.items.length; i ++) {
 		console.log("========================================================================================================================================");
@@ -175,4 +185,28 @@ function getSongInfo() {
 		}
 	}
 	});
+}
+
+//doWhatItSays function...
+//If the liriCommand is do-what-it-says, take the text inside of random.txt and then use it to run spotify-this-song for "I want it that way."
+function doWhatItSays() {
+	//This code will read from the random.txt file.
+	// It's important to include the "utf8" parameter or the code will provide stream data (garbage)
+	// The code will store the contents of the reading inside the variable "data"
+	fs.readFile("random.txt", "utf8", function(error, data) {
+		// If the code experiences any errors it will log the error to the console.
+  		if (error) {
+    		return console.log(error);
+  		}
+  		 // We will then print the contents of data
+ 		//console.log(data);
+
+ 		// Then split it by commas (to make it more readable)
+  		var songdataArray = data.split(",");
+
+  		// We will then re-display the content as an array for later use.
+  		//console.log(songdataArray);
+  		//Call the getSongInfo function to display the song info for "I want it that way."
+  		getSongInfo(songdataArray[1]);
+ 	});
 }
