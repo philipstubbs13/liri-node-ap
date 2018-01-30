@@ -35,9 +35,6 @@ var songName = "";
 //If the liriCommand is movie-this and a movieName is provided...
 //Output information about that movie.
 if (liriCommand === "movie-this") {
-	//log liriCommand to log.txt.
-	logData("liri command: movie-this");
-	logData("Movie name: " + movieName);
 	getMovieInfo();
 }
 
@@ -79,32 +76,38 @@ function getMovieInfo() {
 			//Parse the body of the JSON object that holds the movie data and display the movie info.
 			var movieInfo = JSON.parse(body);
 			//console.log(movieInfo);
-			//Output the following information to terminal window.
-			//Title of the movie.
-			console.log("Title: " + movieInfo.Title);
-			logData("Title: " + movieInfo.Title);
-		   	//Year the movie came out.
-		   	console.log("Year movie was released: " + movieInfo.Year);
-		   	logData("Year movie was released: " + movieInfo.Year);
-		   	//IMDB Rating of the movie.
-		   	console.log("IMDB movie rating (out of 10): " + movieInfo.imdbRating);
-		   	logData("IMDB movie rating (out of 10): " + movieInfo.imdbRating);
-		   	//Rotten Tomatoes rating of the movie.
-		   	console.log("Rotten Tomatoes rating (out of 100%): " + movieInfo.Ratings[1].Value);
-		   	logData("Rotten Tomatoes rating (out of 100%): " + movieInfo.Ratings[1].Value);
-		   	//Country where the movie was produced.
-		   	console.log("Filmed in: " + movieInfo.Country);
-		   	logData("Filmed in: " + movieInfo.Country);
-		   	//Language of the movie.
-		   	console.log("Language: " + movieInfo.Language);
-		   	logData("Language: " + movieInfo.Language);
-		   	//Plot of the movie.
-		   	console.log("Movie plot: " + movieInfo.Plot);
-		   	logData("Movie plot: " + movieInfo.Plot);
-		   	//Actors in the movie.
-		   	console.log("Actors: " + movieInfo.Actors);
-		   	logData("Actors: " + movieInfo.Actors);
-		   	logData("=======================================================================================================");
+			//Output the following information about movieName.
+			// \r\n is used as a new line character in Windows: https://stackoverflow.com/questions/15433188/r-n-r-n-what-is-the-difference-between-them 
+			var movieResult = 
+				//Line break
+				"=======================================================================================================" + "\r\n" +
+				//Output the liri command plus movieName
+				"liri command: movie-this " + movieName + "\r\n" +
+				//Line break
+				"=======================================================================================================" + "\r\n" +
+				//Title of the movie.
+				"Title: " + movieInfo.Title + "\r\n" +
+				//Year the movie came out.
+				"Year movie was released: " + movieInfo.Year + "\r\n" +
+				//IMDB Rating of the movie.
+				"IMDB movie rating (out of 10): " + movieInfo.imdbRating + "\r\n" +
+				//Rotten Tomatoes rating of the movie.
+				"Rotten Tomatoes rating (out of 100%): " + movieInfo.Ratings[1].Value + "\r\n" +
+				//Country where the movie was produced.
+				"Filmed in: " + movieInfo.Country + "\r\n" +
+				//Language of the movie.
+				"Language: " + movieInfo.Language + "\r\n" + 
+				//Plot of the movie.
+				"Movie plot: " + movieInfo.Plot + "\r\n" +
+				//Actors in the movie.
+				"Actors: " + movieInfo.Actors + "\r\n" +
+				//Line break
+				"======================================================================================================="
+
+			//Output the movie information to the terminal.
+			console.log(movieResult);
+			//Output the movie information to the log.txt file.
+			logData(movieResult);
 		}
 	});
 }
@@ -129,18 +132,22 @@ function getLatestTweets(){
 	    console.log("My last 20 tweets");
 	    logData("My last 20 tweets");
 	    for (var i=0; i < tweets.length; i ++) {
-	    	console.log("==========================================================================");
-	    	//Display tweet number for each tweet. For example, the first tweet returned will be tweet #1, the second returned will be tweet #2, etc.
-	    	console.log("Tweet #" + (i+1));
-	    	logData("Tweet #" + (i+1));
-	    	//Output the tweet text from Twitter to the terminal.
-	    	console.log("Tweet: " + tweets[i].text);
-	    	logData("Tweet: " + tweets[i].text);
-	    	//Output the date/time when the tweet was created to the terminal.
-	    	console.log("Created at: " + tweets[i].created_at);
-	    	logData("Created at: " + tweets[i].created_at);
-	    	console.log("==========================================================================");
-	    	logData("=======================================================================================================");
+	    	//output the tweets
+	    	// \r\n is used as a new line character in Windows: https://stackoverflow.com/questions/15433188/r-n-r-n-what-is-the-difference-between-them
+	    	var myTweetResults = 
+	    		"==========================================================================" + "\r\n" +
+	    		//Display tweet number for each tweet. For example, the first tweet returned will be tweet #1, the second returned will be tweet #2, etc.
+	    		"Tweet #" + (i+1) + "\r\n" +
+	    		//Output the tweet text from Twitter to the terminal.
+	    		"Tweet: " + tweets[i].text + "\r\n" +
+	    		//Output the date/time when the tweet was created to the terminal.
+	    		"Created at: " + tweets[i].created_at + "\r\n" +
+	    		"==========================================================================" 
+
+	    	//output the results to the terminal
+	    	console.log(myTweetResults);
+	    	//output the results to the log.txt file.
+	    	logData(myTweetResults);
 	    }
 	  }
 	});
