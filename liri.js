@@ -209,34 +209,31 @@ function getSongInfo(songName) {
 		console.log("Top 10 songs on Spotify with the name, " + songName);
 		logData("Top 10 songs on Spotify with the name, " + songName);
 		//Loop through the JSON data to display the top songs.
-		for (var i = 0; i < data.tracks.items.length; i ++) {
-		var trackInfo = data.tracks.items[i];
-		console.log("==========================================================================");
-		logData("========================================================================================================================================");
-		//Display song number for each song. For example, the first song returned will be Song #1, the second returned will be Song #2, etc.
-		console.log("Song #" + (i+1));
-		//append song # to log.txt file.
-		logData("Song #" + (i+1));
-		//Output the artist
-		console.log("Artist: " + trackInfo.artists[0].name);
-		//Append artist to log.txt file.
-		logData("Artist: " + trackInfo.artists[0].name);
-		//Output the song's name.
-		console.log("Song title: " + trackInfo.name)
-		//Append song name to log.txt file.
-		logData("Song title: " + trackInfo.name);
-		//Output a preview link of the song from Spotify.
-		console.log("Preview song: " + trackInfo.preview_url);
-		//Append preview link of song to log.txt file.
-		logData("Preview song: " + trackInfo.preview_url);
-		//Output the album that the song is from.
-		console.log("Album: " + trackInfo.album.name);
-		//Append album name to log.txt file.
-		logData("Album: " + trackInfo.album.name);
-		console.log("==========================================================================");
+		for (var i = 0; i < data.tracks.items.length; i++) {
+			var trackInfo = data.tracks.items[i];
+			//output the song results.
+			// \r\n is used as a new line character in Windows: https://stackoverflow.com/questions/15433188/r-n-r-n-what-is-the-difference-between-them 
+			var songResults = 
+			
+				"==========================================================================" + "\r\n" +
+				//Display song number for each song. For example, the first song returned will be Song #1, the second returned will be Song #2, etc.
+				"Song #" + (i+1) + "\r\n" +
+				//Output the artist
+				"Artist: " + trackInfo.artists[0].name + "\r\n" +
+				//Output the song's name.
+				"Song title: " + trackInfo.name + "\r\n" +
+				//Output a preview link of the song from Spotify.
+				"Preview song: " + trackInfo.preview_url + "\r\n" +
+				//Output the album that the song is from.
+				"Album: " + trackInfo.album.name + "\r\n" +
+				"==========================================================================";
+
+			//This will display song info in the terminal.
+			console.log(songResults);
+			//This will display song info in the log.txt file.
+			logData(songResults);
 		}
 	}
-	logData("=======================================================================================================");
 	});
 }
 

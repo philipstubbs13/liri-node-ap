@@ -1,36 +1,73 @@
-=======================================================================================================
-liri command: movie-this hunger games
-=======================================================================================================
-Title: The Hunger Games
-Year movie was released: 2012
-IMDB movie rating (out of 10): 7.2
-Rotten Tomatoes rating (out of 100%): 84%
-Filmed in: USA
-Language: English
-Movie plot: Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.
-Actors: Stanley Tucci, Wes Bentley, Jennifer Lawrence, Willow Shields
-=======================================================================================================
-=======================================================================================================
-liri command: movie-this coach carter
-=======================================================================================================
-Title: Coach Carter
-Year movie was released: 2005
-IMDB movie rating (out of 10): 7.3
-Rotten Tomatoes rating (out of 100%): 65%
-Filmed in: USA, Germany
-Language: English
-Movie plot: Controversy surrounds high school basketball coach Ken Carter after he benches his entire team for breaking their academic contract with him.
-Actors: Samuel L. Jackson, Rob Brown, Robert Ri'chard, Rick Gonzalez
-=======================================================================================================
-=======================================================================================================
-liri command: movie-this Mr Nobody
-=======================================================================================================
-Title: Mr. Nobody
-Year movie was released: 2009
-IMDB movie rating (out of 10): 7.9
-Rotten Tomatoes rating (out of 100%): 66%
-Filmed in: Belgium, Germany, Canada, France, USA, UK
-Language: English, Mohawk
-Movie plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
-Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
-=======================================================================================================
+
+liri command: spotify-this-song
+Top 10 songs on Spotify with the name,  baby
+==========================================================================
+Song #1
+Artist: Kodak Black
+Song title: Roll In Peace (feat. XXXTENTACION)
+Preview song: https://p.scdn.co/mp3-preview/b77976d5bf4ec6cdb1bbb2f93d2c7782efb2e898?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Project Baby 2
+==========================================================================
+==========================================================================
+Song #2
+Artist: Kodak Black
+Song title: Codeine Dreaming (feat. Lil Wayne)
+Preview song: https://p.scdn.co/mp3-preview/07bee3c4a99114ff71275aa7b3db42fbde85aef4?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Project Baby 2: All Grown Up (Deluxe)
+==========================================================================
+==========================================================================
+Song #3
+Artist: Kodak Black
+Song title: Transportin'
+Preview song: https://p.scdn.co/mp3-preview/dc943e9eeed11c3ece97cbbc26c9b00fdf0367b8?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Project Baby 2
+==========================================================================
+==========================================================================
+Song #4
+Artist: DRAM
+Song title: Broccoli
+Preview song: https://p.scdn.co/mp3-preview/4858b2a71d5c356c88960cef3e09923e01365631?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Big Baby DRAM
+==========================================================================
+==========================================================================
+Song #5
+Artist: YoungBoy Never Broke Again
+Song title: 38 Baby
+Preview song: https://p.scdn.co/mp3-preview/1393b7245756444891af155ea6e2975f099afb7e?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: 38 Baby
+==========================================================================
+==========================================================================
+Song #6
+Artist: Arcangel
+Song title: Austin Baby
+Preview song: https://p.scdn.co/mp3-preview/6c4c00c0067fce7f55cb4a18ff80a4632098ca61?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Austin Baby
+==========================================================================
+==========================================================================
+Song #7
+Artist: Justin Bieber
+Song title: Baby
+Preview song: null
+Album: My World 2.0
+==========================================================================
+==========================================================================
+Song #8
+Artist: Father John Misty
+Song title: Real Love Baby
+Preview song: https://p.scdn.co/mp3-preview/a73451291399b823c9f1b36d2f507dd0e5052c97?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Real Love Baby
+==========================================================================
+==========================================================================
+Song #9
+Artist: Britney Spears
+Song title: ...Baby One More Time
+Preview song: https://p.scdn.co/mp3-preview/da2134a161f1cb34d17c2d6d7e77cc93d1c1e6f7?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: ...Baby One More Time (Digital Deluxe Version)
+==========================================================================
+==========================================================================
+Song #10
+Artist: Melanie Martinez
+Song title: Cry Baby
+Preview song: https://p.scdn.co/mp3-preview/eee7d2f5b0209fa3cd9daa940969ecd8013c921a?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Cry Baby (Deluxe)
+==========================================================================
