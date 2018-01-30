@@ -27,7 +27,7 @@ var liriCommand = input[2];
 var movieName = input[3];
 
 //If the liriCommand is spotify-this-song, we will need a variable to hold the song name.
-var songName = input[3];
+var songName = "";
 
 //Code to access keys information.
 //var client = new Twitter(keys.twitter);
@@ -129,7 +129,7 @@ function getLatestTweets(){
 	    console.log("My last 20 tweets");
 	    logData("My last 20 tweets");
 	    for (var i=0; i < tweets.length; i ++) {
-	    	console.log("============================================================================================================================");
+	    	console.log("==========================================================================");
 	    	//Display tweet number for each tweet. For example, the first tweet returned will be tweet #1, the second returned will be tweet #2, etc.
 	    	console.log("Tweet #" + (i+1));
 	    	logData("Tweet #" + (i+1));
@@ -139,7 +139,7 @@ function getLatestTweets(){
 	    	//Output the date/time when the tweet was created to the terminal.
 	    	console.log("Created at: " + tweets[i].created_at);
 	    	logData("Created at: " + tweets[i].created_at);
-	    	console.log("============================================================================================================================");
+	    	console.log("==========================================================================");
 	    	logData("=======================================================================================================");
 	    }
 	  }
@@ -148,6 +148,13 @@ function getLatestTweets(){
 
 //Get song info function... Run this function to get information about the specified song.
 function getSongInfo(songName) {
+	//This for loop ensures that if the song name is longer than one word, all of the words in the song name stay on the same line.
+	//Rather than putting each word in the song name on a different line.
+	for (var i=3; i < input.length; i++){
+		songName = songName + " " + input[i];
+	}
+
+	//console.log(songName);
 
 	//var spotify = new Spotify(keys.spotify);
 	var spotify = new Spotify({
@@ -197,7 +204,7 @@ function getSongInfo(songName) {
 		//Loop through the JSON data to display the top songs.
 		for (var i = 0; i < data.tracks.items.length; i ++) {
 		var trackInfo = data.tracks.items[i];
-		console.log("========================================================================================================================================");
+		console.log("==========================================================================");
 		logData("========================================================================================================================================");
 		//Display song number for each song. For example, the first song returned will be Song #1, the second returned will be Song #2, etc.
 		console.log("Song #" + (i+1));
@@ -219,7 +226,7 @@ function getSongInfo(songName) {
 		console.log("Album: " + trackInfo.album.name);
 		//Append album name to log.txt file.
 		logData("Album: " + trackInfo.album.name);
-		console.log("========================================================================================================================================");
+		console.log("==========================================================================");
 		}
 	}
 	logData("=======================================================================================================");
