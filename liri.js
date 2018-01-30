@@ -47,8 +47,6 @@ if (liriCommand === "my-tweets") {
 
 //If the liriCommand is spotify-this-song, show song info for the specified song.
 if (liriCommand === "spotify-this-song") {
-	//log liriCommand to log.txt.
-	logData("liri command: spotify-this-song");
 	getSongInfo(songName);
 }
 
@@ -162,6 +160,10 @@ function getSongInfo(songName) {
 	}
 
 	//console.log(songName);
+	//Line break to keep log.txt file clean and organized.
+	logData("==========================================================================");
+	//log liriCommand to log.txt.
+	logData("liri command: spotify-this-song");
 
 	//var spotify = new Spotify(keys.spotify);
 	var spotify = new Spotify({
@@ -194,13 +196,17 @@ function getSongInfo(songName) {
 	if (songName === "The Sign") {
 		//Output the artist
 		console.log("Artist: " + data.tracks.items[5].artists[0].name);
-		logResults = 
+		logData("Artist: " + data.tracks.items[5].artists[0].name); 
 		//Output the song's name.
 		console.log("Song title: " + data.tracks.items[5].name)
+		logData("Song title: " + data.tracks.items[5].name);
 		//Output a preview link of the song from Spotify.
 		console.log("Preview song: " + data.tracks.items[5].preview_url);
+		logData("Preview song: " + data.tracks.items[5].preview_url);
 		//Output the album that the song is from.
 		console.log("Album: " + data.tracks.items[5].album.name);
+		logData("Album: " + data.tracks.items[5].album.name);
+		logData("==========================================================================");
 	}
 
 
@@ -215,6 +221,7 @@ function getSongInfo(songName) {
 			// \r\n is used as a new line character in Windows: https://stackoverflow.com/questions/15433188/r-n-r-n-what-is-the-difference-between-them 
 			var songResults = 
 			
+				//Line break to keep log.txt file clean and organized.
 				"==========================================================================" + "\r\n" +
 				//Display song number for each song. For example, the first song returned will be Song #1, the second returned will be Song #2, etc.
 				"Song #" + (i+1) + "\r\n" +
@@ -226,6 +233,7 @@ function getSongInfo(songName) {
 				"Preview song: " + trackInfo.preview_url + "\r\n" +
 				//Output the album that the song is from.
 				"Album: " + trackInfo.album.name + "\r\n" +
+				//Line break to keep log.txt file clean and organized.
 				"==========================================================================";
 
 			//This will display song info in the terminal.
