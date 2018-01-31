@@ -31,11 +31,13 @@
 
 ### <a name="dependencies"></a> Dependencies
 The following are dependencies to the project:
-	* Twitter node package (https://www.npmjs.com/package/twitter) - used to send requests to Twitter API and receive tweets.
-	* Spotify node package (https://www.npmjs.com/package/node-spotify-api) - used to send requests to Spotify API and receive song information.
-	* Request node package (https://www.npmjs.com/package/request) - used to send requests to OMDB API and receive movie information.
-	* DotEnv node package (https://www.npmjs.com/package/dotenv) - used to load environment variables from a .env file into process.env.
-	* Columnify node package (https://www.npmjs.com/package/columnify) - used to display terminal output in columns.
+<ul>
+	<li>Twitter node package (https://www.npmjs.com/package/twitter) - used to send requests to Twitter API and receive tweets.</li>
+	<li>Spotify node package (https://www.npmjs.com/package/node-spotify-api) - used to send requests to Spotify API and receive song information.</li>
+	<li>Request node package (https://www.npmjs.com/package/request) - used to send requests to OMDB API and receive movie information.</li>
+	<li>DotEnv node package (https://www.npmjs.com/package/dotenv) - used to load environment variables from a .env file into process.env.</li>
+	<li>Columnify node package (https://www.npmjs.com/package/columnify) - used to display terminal output in columns.</li>
+</ul>
 
 ### <a name="command-reference"></a> Running LIRI from the command line
 <p>In LIRI version 1.0, there are four commands that you can run. These commands allow you to receive access to latest tweets from Twitter, song information from Spotify, and movie information from OMDB. Make sure that you understand the command syntax and various arguments you can use for the command you want to run.</p>
@@ -50,8 +52,8 @@ The following are dependencies to the project:
 Command | Description
 ------------ | -------------
 my-tweets | Shows the last 20 tweets from Twitter timeline and when they were created.
-movie-this [movie_name] | Shows information about the specifid movie. If no movie is specified, Mr. Nobody is displayed by default.
-spotify-this-song [song_name] | Shows top 10 songs on Spotify that have specified name. If no song is specified, The Sign by Ace of Base is displayed by default.
+movie-this [movie_name] | Shows information about the specifid movie. The movie name is optional. If no movie is specified, Mr. Nobody is displayed by default.
+spotify-this-song [song_name] | Shows top 10 songs on Spotify that have specified name. Song name is optional. If no song is specified, The Sign by Ace of Base is displayed by default.
 do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that way.
 
 ## <a name="structure-of-project"></a> Structure of the project
