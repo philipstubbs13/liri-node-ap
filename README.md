@@ -38,6 +38,7 @@ The following are dependencies to the project:
 	<li>DotEnv node package (https://www.npmjs.com/package/dotenv) - used to load environment variables from a .env file into process.env.</li>
 	<li>Columnify node package (https://www.npmjs.com/package/columnify) - used to display terminal output in columns.</li>
 </ul>
+<p>Version information is available in the package.json file in the project root directory</p>
 
 ### <a name="command-reference"></a> Running LIRI from the command line
 <p>In LIRI version 1.0, there are four commands that you can run. These commands allow you to receive access to latest tweets from Twitter, song information from Spotify, and movie information from OMDB. Make sure that you understand the command syntax and various arguments you can use for the command you want to run.</p>
@@ -66,7 +67,6 @@ do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that
 	<li><b>package.json</b>: Lists the project dependencies (third party npm packages) and their version numbers.</li>
 	<li><b>random.txt</b>: Used to run the do-what-it-says command.</li>
 </ul>
-<p>Version information is available in the package.json file in the project root directory</p>
 
 ## <a name="examples"></a> Examples
 
