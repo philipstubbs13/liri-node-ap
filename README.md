@@ -23,22 +23,18 @@
 ## <a name="about-this-project"></a> About this project
 
 
-## <a name="live"></a> Live
-
-
 ## <a name="contribute"></a> Getting started
 
 
 ## <a name="structure-of-project"></a> Structure of the project
 <p>The project directory structure is setup as follows:</p>
 <ul>
-	<li> <b>keys.js</b>:
+	<li> <b>keys.js</b>: Allows access to the keys that are used to send and retrieve data to and from the Twitter and Spotify APIs.
 	</li>
-	<li><b>liri.js</b>: </li>
-	<li><b>log.txt</b>: </li>
-	<li><b>package.json</b>: </li>
-	<li><b>random.txt</b>: </li>
-	<li><b>images</b>: </li>
+	<li><b>liri.js</b>: Contains the code that is used to run the application from the command line.</li>
+	<li><b>log.txt</b>: App log file. When you run a command, data gets logged to the terminal as well as to the log.txt file in the project's root directory.</li>
+	<li><b>package.json</b>: Lists the project dependencies (third party npm packages) and their version numbers.</li>
+	<li><b>random.txt</b>: Used to run the do-what-it-says command.</li>
 </ul>
 
 ## <a name="examples"></a> Examples
