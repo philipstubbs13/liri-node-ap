@@ -6,6 +6,10 @@
   * [About this project](#about-this-project)
   * [Live](#live)
   * [Getting started](#contribute)
+  	* [Dependencies](#dependencies)
+  	* [Running LIRI from the command line](#command-reference)
+  		* [Command line syntax](#command-syntax)
+  		* [Available commands](#available-commands)
   * [Structure of the project](#structure-of-project)
   * [Examples](#examples)
   	* [Display last 20 tweets](#tweets)
@@ -25,6 +29,30 @@
 
 ## <a name="contribute"></a> Getting started
 
+### <a name="dependencies"></a> Dependencies
+The following are dependencies to the project:
+	* Twitter node package (https://www.npmjs.com/package/twitter) - used to send requests to Twitter API and receive tweets.
+	* Spotify node package (https://www.npmjs.com/package/node-spotify-api) - used to send requests to Spotify API and receive song information.
+	* Request node package (https://www.npmjs.com/package/request) - used to send requests to OMDB API and receive movie information.
+	* DotEnv node package (https://www.npmjs.com/package/dotenv) - used to load environment variables from a .env file into process.env.
+	* Columnify node package (https://www.npmjs.com/package/columnify) - used to display terminal output in columns.
+
+### <a name="command-reference"></a> Running LIRI from the command line
+<p>In LIRI version 1.0, there are four commands that you can run. These commands allow you to receive access to latest tweets from Twitter, song information from Spotify, and movie information from OMDB. Make sure that you understand the command syntax and various arguments you can use for the command you want to run.</p>
+
+#### <a name="command-syntax"></a> Command line syntax
+<p>The syntax for the LIRI command line interface is:</p>
+<pre>node liri.js <i>command</i> [<i>arguments</i>]</pre>
+
+#### <a name="available-commands"></a> Available commands
+<p>There are four LIRI commands available from the command line.</p>
+
+Command | Description
+------------ | -------------
+my-tweets | Shows the last 20 tweets from Twitter timeline and when they were created.
+movie-this [movie_name] | Shows information about the specifid movie. If no movie is specified, Mr. Nobody is displayed by default.
+spotify-this-song [song_name] | Shows top 10 songs on Spotify that have specified name. If no song is specified, The Sign by Ace of Base is displayed by default.
+do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that way.
 
 ## <a name="structure-of-project"></a> Structure of the project
 <p>The project directory structure is setup as follows:</p>
@@ -359,10 +387,6 @@ Album: The Sign (US Album) [Remastered]
 ## <a name="technologies-used"></a> Technologies used to build app
 
   * Node.js (https://nodejs.org/en/)
-  * Twitter node package (https://www.npmjs.com/package/twitter) - used to send requests to Twitter API and receive tweets.
-  * Spotify node package (https://www.npmjs.com/package/node-spotify-api) - used to send requests to Spotify API and receive song information.
-  * Request node package (https://www.npmjs.com/package/request) - used to send requests to OMDB API and receive movie information.
-  * DotEnv node package (https://www.npmjs.com/package/dotenv) - used to load environment variables from a .env file into process.env.
   * Javascript
 
 ## <a name="about-node"></a>About Node.js
