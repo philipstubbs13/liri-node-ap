@@ -66,6 +66,7 @@ do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that
 	<li><b>package.json</b>: Lists the project dependencies (third party npm packages) and their version numbers.</li>
 	<li><b>random.txt</b>: Used to run the do-what-it-says command.</li>
 </ul>
+<p>Version information is available in the package.json file in the project root directory</p>
 
 ## <a name="examples"></a> Examples
 
