@@ -9,6 +9,9 @@ var request = require("request");
 var Spotify = require('node-spotify-api');
 //Grap the Twitter package to send requests to the Twitter API.
 var Twitter = require('twitter');
+//Grab columnify package to display command line help output in columns.
+//https://www.npmjs.com/package/columnify
+var columnify = require('columnify')
 
 // fs is a core Node package for reading and writing files
 var fs = require("fs");
@@ -55,6 +58,11 @@ if (liriCommand === "do-what-it-says") {
 	//log liriCommand to log.txt.
 	logData("liri command: do-what-it-says");
 	doWhatItSays();
+}
+
+//If the liriCommand is help, display command line help page.
+if (liriCommand === "help") {
+	showHelp();
 }
 
 //Get movie info function... Run this function to get movie info for the specified movie.
@@ -286,4 +294,27 @@ function logData(logResults) {
 	}
 });
 
+}
+
+//Function to show command line help. Using columnify npm package to display contents in columns.
+function showHelp() {
+	var helpInfo = "Usage: node liri.js <command> [arguments]" 
+	var helpColumns = columnify([{
+			Command: 'my-tweets',
+			Description: "Shows the last 20 tweets from Twitter timeline and when they were created."
+			}, {
+
+			Command: "movie-this [movie name]",
+			Description: "Shows information about the specifid movie. If no movie is specified, Mr. Nobody is displayed by default."
+			}, {
+
+			Command: "spotify-this-song [song name]",
+			Description: "Shows top 10 songs on Spotify that have specified name. If no song is specified, The Sign by Ace of Base is displayed by default."
+			}, {
+
+			Command: 'do-what-it-says',
+			Description: "Shows the top 10 songs on Spotify for the song, 'I want it that way.'"
+			}])
+	console.log(helpInfo);
+	console.log(helpColumns);
 }

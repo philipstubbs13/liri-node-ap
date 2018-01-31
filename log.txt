@@ -287,3 +287,142 @@ Song title: I Want It That Way
 Preview song: https://p.scdn.co/mp3-preview/2f96341eb8415a3efb27375db1c4d59928408c2f?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
 Album: 90 Sweet 90s Hits!
 ==========================================================================
+liri command: my-tweets
+My last 20 tweets
+==========================================================================
+Tweet #1
+Tweet: RT @NOTSportsCenter: When you know you’re about to get fired and you just DGAF anymore https://t.co/phbBNKxZMH
+Created at: Sat Jan 27 03:02:24 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #2
+Tweet: RT @TheFostersTV: "What is an American?" ✊🏻✊🏼✊🏽✊🏾✊🏿 
+______
+Song: "Don't Give Up" by @RyanStar https://t.co/FvJkDkZLZi
+Created at: Sat Jan 27 03:01:53 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #3
+Tweet: RT @Fullscreen: Awwwwkward. https://t.co/PrsaEcBsd9
+Created at: Mon Jan 01 06:32:42 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #4
+Tweet: RT @KarlTowns: Happy New Years to everyone! Hope 2018 brings everyone blessings, positivity, and success! God bless!
+Created at: Mon Jan 01 05:25:52 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #5
+Tweet: RT @NFL: 2017 Division WINNERS! https://t.co/4KZyG4dR5y
+Created at: Mon Jan 01 03:43:26 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #7
+Tweet: “Why I Left My $100,000+ Developer Job at Google” by YK Sugishita https://t.co/KS6N8pF9BN
+Created at: Sun Dec 31 02:17:12 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #6
+Tweet: RT @DukeMBB: If you start watching the 2015 National Championship Game on your DVR at about 10:51:41 PM and skip commercials/halftime, Tyus…
+Created at: Mon Jan 01 03:43:07 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #8
+Tweet: “One Hour of Side Project Coding a Day*— a New Year’s Resolution Worth Making” by @LeMarquisOfAndy https://t.co/VIglVFbMZX
+Created at: Sun Dec 31 02:08:02 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #9
+Tweet: RT @lindseyvonn: Good ol’ Buck Hill!!! Where I grew up❤️ https://t.co/Vcg9BwSRwd
+Created at: Sat Dec 30 02:47:32 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #10
+Tweet: RT @UKCoachCalipari: You only know if you’re going to win or lose when you win or lose, so why create any anxiety and look ahead? If you st…
+Created at: Fri Dec 29 23:39:31 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #11
+Tweet: RT @Timberwolves: Hey Jimmy Butler, can you name someone more clutch than you?
+
+3️⃣9️⃣ points and an #NBAVote! https://t.co/bNQAiLpsnK
+Created at: Thu Dec 28 15:28:12 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #12
+Tweet: RT @espn: Jimmy Butler in overtime: money. https://t.co/0DABuIHwyE
+Created at: Thu Dec 28 15:28:06 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #13
+Tweet: RT @MNWolfDen: THANK YOU JIMMY! Wolves fans retweet to vote him into the All-Star game because he just single handily won us the game!
+
+Jim…
+Created at: Thu Dec 28 04:10:45 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #14
+Tweet: RT @NOTSportsCenter: Today’s bowl schedule: 
+
+Florida State/Southern Miss: The Yes FSU Is Bowl Eligible Somehow Bowl
+
+Iowa/Boston College:…
+Created at: Wed Dec 27 23:56:19 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #15
+Tweet: RT @TheFostersTV: The second you graduate college, parents be like: https://t.co/YdjQPYLLX6
+Created at: Wed Dec 27 23:55:29 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #16
+Tweet: RT @lecrae: Sometimes it’s not a loss. It’s just God helping you clean house.
+Created at: Wed Dec 27 23:55:12 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #17
+Tweet: RT @LukeKennard5: Happy birthday Jesus! Merry Christmas everyone!
+Created at: Mon Dec 25 15:45:21 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #18
+Tweet: RT @lecrae: Celebrate Jesus.
+Eat terribly.
+Destroy someone’s soul in monopoly.
+Open gifts. #ChristmasEve
+Created at: Mon Dec 25 03:45:02 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #19
+Tweet: RT @bigballerbrand: It's not about the money for the Ball Brothers. They have a passion to play Basketball and to experience playing as pro…
+Created at: Mon Dec 18 00:38:51 +0000 2017
+==========================================================================
+==========================================================================
+Tweet #20
+Tweet: RT @AthleteSwag: Funniest video on Twitter 😂 https://t.co/cRnb21ZxW9
+Created at: Fri Nov 24 16:39:14 +0000 2017
+==========================================================================
+=======================================================================================================
+liri command: movie-this space
+=======================================================================================================
+Title: 2001: A Space Odyssey
+Year movie was released: 1968
+IMDB movie rating (out of 10): 8.3
+Rotten Tomatoes rating (out of 100%): 94%
+Filmed in: UK, USA
+Language: English, Russian
+Movie plot: Humanity finds a mysterious, obviously artificial object buried beneath the Lunar surface and, with the intelligent computer H.A.L. 9000, sets off on a quest.
+Actors: Keir Dullea, Gary Lockwood, William Sylvester, Daniel Richter
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this flubber
+=======================================================================================================
+Title: Flubber
+Year movie was released: 1997
+IMDB movie rating (out of 10): 5.2
+Rotten Tomatoes rating (out of 100%): 23%
+Filmed in: USA
+Language: English
+Movie plot: An absent-minded professor discovers "flubber," a rubber-like super-bouncy substance.
+Actors: Robin Williams, Marcia Gay Harden, Christopher McDonald, Ted Levine
+=======================================================================================================
