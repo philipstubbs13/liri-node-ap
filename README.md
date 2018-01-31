@@ -165,19 +165,200 @@ Created at: Fri Nov 24 16:39:14 +0000 2017
 
 
 ### <a name ="movie-specified"></a> Display movie information for specified movie
-
+<pre>
+$ node liri.js movie-this Miracle
+=======================================================================================================
+liri command: movie-this Miracle
+=======================================================================================================
+Title: Miracle
+Year movie was released: 2004
+IMDB movie rating (out of 10): 7.5
+Rotten Tomatoes rating (out of 100%): 80%
+Filmed in: Canada, USA
+Language: English
+Movie plot: Miracle tells the true story of Herb Brooks (Kurt Russell), the player-turned-coach who led the 1980 U.S. Olympic hockey team to victory over the seemingly invincible Russian squad.
+Actors: Kurt Russell, Patricia Clarkson, Noah Emmerich, Sean McCann
+=======================================================================================================
+</pre>
 
 ### <a name ="movie-not-specified"></a> Display movie information for Mr. Nobody when no movie is specified
-
+<pre>
+$ node liri.js movie-this
+=======================================================================================================
+liri command: movie-this Mr Nobody
+=======================================================================================================
+Title: Mr. Nobody
+Year movie was released: 2009
+IMDB movie rating (out of 10): 7.9
+Rotten Tomatoes rating (out of 100%): 66%
+Filmed in: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Movie plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+=======================================================================================================
+</pre>
 
 ### <a name ="spotify-this-song"></a> Display top 10 songs on Spotify for the specified song name
+<pre>
+$ node liri.js spotify-this-song What ifs
+Top 10 songs on Spotify with the name,  What ifs
+==========================================================================
+Song #1
+Artist: Kane Brown
+Song title: What Ifs
+Preview song: https://p.scdn.co/mp3-preview/9a1bc6de88d686138b641e6022a4b30c6e75de74?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Kane Brown
+==========================================================================
+==========================================================================
+Song #2
+Artist: Kane Brown
+Song title: What Ifs
+Preview song: https://p.scdn.co/mp3-preview/38694be1b7496f8ff0f308340855c9d8dfc5cf01?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Kane Brown (Deluxe Edition)
+==========================================================================
+==========================================================================
+Song #3
+Artist: Kane Brown
+Song title: What Ifs (Remix)
+Preview song: https://p.scdn.co/mp3-preview/b05441ecafdf40446beb4bc8f8835b1a2421d447?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: What Ifs (Remix)
+==========================================================================
+==========================================================================
+Song #4
+Artist: boyChild
+Song title: Counting What Ifs (feat. Soundmouse) - Original
+Preview song: https://p.scdn.co/mp3-preview/70d964d280f453940f23b78f5bc8233742ebbc2e?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #5
+Artist: boyChild
+Song title: Counting What Ifs (feat. Soundmouse) - Darkhorse Ambient Room Remix
+Preview song: https://p.scdn.co/mp3-preview/307753756f5d7f6cdebc8112a50bf31512bdb7d6?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #6
+Artist: Melanie Baker
+Song title: What Ifs
+Preview song: https://p.scdn.co/mp3-preview/9de234644b9cc922ae56869b0b7f98a2d62c16cf?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: What Ifs
+==========================================================================
+==========================================================================
+Song #7
+Artist: boyChild
+Song title: Counting What Ifs - Vika Remix
+Preview song: https://p.scdn.co/mp3-preview/f672b9ef58af0e8a32f5525ae52e312716253db3?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #8
+Artist: Jaguar Wright
+Song title: The What If's
+Preview song: https://p.scdn.co/mp3-preview/0d1d44193e56b600f0f549591ddb7145fab70b52?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Denials Delusions And Decisions
+==========================================================================
+==========================================================================
+Song #9
+Artist: boyChild
+Song title: Counting What Ifs (feat. Soundmouse) - No Beats
+Preview song: https://p.scdn.co/mp3-preview/0d1d44193e56b600f0f549591ddb7145fab70b52?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #10
+Artist: Ryan Krysiak
+Song title: What Ifs (feat. Brenna Nicole Bone)
+Preview song: https://p.scdn.co/mp3-preview/7b49eeca51d768df6692c553973484c212171015?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: What Ifs (feat. Brenna Nicole Bone)
+==========================================================================
+</pre>
 
 
 ### <a name = "do-what-it-says"></a> Display top 10 songs on Spotify for the song, I want it that way
-
+<pre>
+$ node liri.js do-what-it-says
+Top 10 songs on Spotify with the name, "I Want it That Way"
+==========================================================================
+Song #1
+Artist: Backstreet Boys
+Song title: I Want It That Way
+Preview song: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: The Hits--Chapter One
+==========================================================================
+==========================================================================
+Song #2
+Artist: Backstreet Boys
+Song title: I Want It That Way
+Preview song: https://p.scdn.co/mp3-preview/f9f504a705fcaaf2f24b004b629725451014ad6c?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: The Essential Backstreet Boys
+==========================================================================
+==========================================================================
+Song #3
+Artist: Backstreet Boys
+Song title: I Want It That Way
+Preview song: https://p.scdn.co/mp3-preview/b8c2410a5acb68b462be6ac85f1312430e2b149c?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Millennium
+==========================================================================
+==========================================================================
+Song #4
+Artist: Anthem Lights
+Song title: I Want It That Way
+Preview song: https://p.scdn.co/mp3-preview/4a163fbfa2dbbe4433f277e0e7395dca656364f5?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Covers Part IV
+==========================================================================
+==========================================================================
+Song #5
+Artist: Glee Cast
+Song title: Bye Bye Bye / I Want It That Way (Glee Cast Version)
+Preview song: https://p.scdn.co/mp3-preview/3aa63b5c98b98ae333e567813e5c720abb2914f0?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Bye Bye Bye / I Want It That Way (Glee Cast Version)
+==========================================================================
+==========================================================================
+Song #6
+Artist: Manuel Costa
+Song title: I Want It That Way
+Preview song: https://p.scdn.co/mp3-preview/cdde86f49ca4ef217ac08bbbb0c6295c16f015b0?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: I Want It That Way
+==========================================================================
+==========================================================================
+Song #7
+Artist: Backstreet Boys
+Song title: I Want It That Way
+Preview song: https://p.scdn.co/mp3-preview/2f96341eb8415a3efb27375db1c4d59928408c2f?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: 90 Sweet 90s Hits!
+==========================================================================
+==========================================================================
+Song #8
+Artist: "Weird Al" Yankovic
+Song title: Ebay (Parody of "I Want It That Way" by the Backstreet Boys)
+Preview song: https://p.scdn.co/mp3-preview/e217ea111ab84a777f204252fce4b18d5de3ae80?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Poodle Hat
+==========================================================================
+==========================================================================
+Song #9
+Artist: Dynamite Boy
+Song title: I Want It That Way
+Preview song: null
+Album: Punk Goes Pop
+==========================================================================
+==========================================================================
+Song #10
+Artist: Landon Austin & Julia Sheer
+Song title: I Want It That Way
+Preview song: https://p.scdn.co/mp3-preview/e777be5446dc3df34abc2eaec241edb5a590976c?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: I Want It That Way
+==========================================================================
+</pre>
 
 ### <a name = "song-not-specified"></a> Display song information for The Sign by Ace of Base when no song is specified
-
+<pre>
+$ node liri.js spotify-this-song
+Artist: Ace of Base
+Song title: The Sign
+Preview song: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: The Sign (US Album) [Remastered]
+</pre>
 
 ## <a name="technologies-used"></a> Technologies used to build app
 
@@ -195,12 +376,9 @@ Created at: Fri Nov 24 16:39:14 +0000 2017
 <p>To access the command line help, run the following command in the project's root directory:</p>
 <pre>node liri.js help</pre>
 
-
-
 ## <a name="feature-enhancements"></a> Future code development
 <p>Source code will be developed over time to handle new features in the future.</p>
 <p>The following is a list of potential feature enhancements:</p>
-
 
 ## <a name ="Issues"></a> Issues
 <p>If you find an issue while using the app or have a request, <a href="https://github.com/philipstubbs13/Project-Longshot/issues/" target="_blank">log the issue or request here</a>. These issues will be addressed in a future code update.</p>
