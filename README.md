@@ -1,6 +1,6 @@
 # LIRI
 
-<p>LIRI is like iPhone's SIRI or Google's Google Assistant. However, while SIRI and Google Assistant are a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back tweets, songs, and movies.</p>
+<p>LIRI is like iPhone's SIRI or Google's Google Assistant (if you're not an Apple person like me). However, while SIRI and Google Assistant are a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back tweets, songs, and movies.</p>
 
 ## Table of contents
   * [About this project](#about-this-project)
@@ -38,10 +38,10 @@ The following are dependencies to the project:
 	<li>DotEnv node package (https://www.npmjs.com/package/dotenv) - used to load environment variables from a .env file into process.env.</li>
 	<li>Columnify node package (https://www.npmjs.com/package/columnify) - used to display terminal output in columns.</li>
 </ul>
-<p>Version information is available in the package.json file in the project root directory</p>
+<p>Version information for each of these packages is available in the package.json file in the project root directory.</p>
 
 ### <a name="command-reference"></a> Running LIRI from the command line
-<p>In LIRI version 1.0, there are four commands that you can run. These commands allow you to receive access to latest tweets from Twitter, song information from Spotify, and movie information from OMDB. Make sure that you understand the command syntax and various arguments you can use for the command you want to run.</p>
+<p>In LIRI version 1.0, there are four commands that you can run. These commands allow you to receive access to a list of tweets from Twitter, song information from Spotify, and movie information from OMDB. Review the command syntax and various arguments you can use for the command you want to run.</p>
 
 #### <a name="command-syntax"></a> Command line syntax
 <p>The syntax for the LIRI command line interface is:</p>
@@ -56,6 +56,7 @@ my-tweets | Shows the last 20 tweets from Twitter timeline and when they were cr
 movie-this [movie_name] | Shows information about the specifid movie. The movie name is optional. If no movie is specified, Mr. Nobody is displayed by default.
 spotify-this-song [song_name] | Shows top 10 songs on Spotify that have specified name. Song name is optional. If no song is specified, The Sign by Ace of Base is displayed by default.
 do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that way.
+
 
 ## <a name="structure-of-project"></a> Structure of the project
 <p>The project directory structure is setup as follows:</p>
