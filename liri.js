@@ -74,7 +74,7 @@ function getMovieInfo() {
 	  if (i > 2 && i < input.length) {
 	    movieName = movieName + " " + input[i];
 	  }
-	  console.log(movieName);
+	  //console.log(movieName);
 
 	}
 
