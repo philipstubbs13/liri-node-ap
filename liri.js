@@ -27,7 +27,7 @@ var input = process.argv;
 var liriCommand = input[2];
 
 //If the liriCommand is movie-this, we will need a variable to hold the movie name.
-var movieName = input[3];
+var movieName = "";
 
 //If the liriCommand is spotify-this-song, we will need a variable to hold the song name.
 var songName = "";
@@ -68,11 +68,22 @@ if (liriCommand === "help") {
 //Get movie info function... Run this function to get movie info for the specified movie.
 function getMovieInfo() {
 
-	//If no movie name is specified on the command line, then show the movie info for the movie, Mr. Nobody.
-	if (!movieName) {
-		//If no movie is specified, set movieName equal to Mr. Nobody.
-		movieName = "Mr Nobody";
+	//If the movie name is longer than one word, join the words together on one line rather than having separate lines for each word.
+	for (var i = 3; i < input.length; i++) {
+
+	  if (i > 2 && i < input.length) {
+	    movieName = movieName + " " + input[i];
+	  }
+	  console.log(movieName);
+
 	}
+
+	//If no movie name is specified on the command line, then show the movie info for the movie, Mr. Nobody.
+	 if (!movieName) {
+	 	//If no movie is specified, set movieName equal to Mr. Nobody.
+	 	movieName = "Mr Nobody";
+	}
+	
 
 	//Then, run a request to the OMDB API with the movieName value.
 	request("http://www.omdbapi.com/?t=" + movieName + "&apikey=trilogy", function(error, response, body) {
@@ -116,7 +127,7 @@ function getMovieInfo() {
 			logData(movieResult);
 		}
 	});
-}
+ }
 
 //Get tweets function... Run this function to get last 20 tweets and when they were created.
 function getLatestTweets(){
