@@ -655,3 +655,15 @@ Language: English
 Movie plot: The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.
 Actors: Felicity Jones, Diego Luna, Alan Tudyk, Donnie Yen
 =======================================================================================================
+=======================================================================================================
+liri command: movie-this  social network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+Rotten Tomatoes rating (out of 100%): 96%
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
+=======================================================================================================

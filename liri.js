@@ -74,6 +74,7 @@ function getMovieInfo() {
 	  if (i > 2 && i < input.length) {
 	    movieName = movieName + " " + input[i];
 	  }
+	  //For example, if the user enters "node liri.js movie this social network", movieName should be "social network" when we log the value of the movieName variable to the terminal.
 	  //console.log(movieName);
 
 	}

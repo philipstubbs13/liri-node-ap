@@ -13,7 +13,8 @@
   * [Structure of the project](#structure-of-project)
   * [Examples](#examples)
   	* [Display last 20 tweets](#tweets)
-  	* [Display movie information for specified movie](#movie-specified)
+  	* [Display movie information for specified movie (when movie name is 1 word)](#movie-specified)
+    * [Display movie information for specified movie (when movie name is 2 words or longer)](#movie-specified-two)
   	* [Display movie information for Mr. Nobody when no movie is specified](#movie-not-specified)
   	* [Display top 10 songs on Spotify for the specified song name](#spotify-this-song)
   	* [Display top 10 songs on Spotify for the song, I want it that way](#do-what-it-says)
@@ -192,7 +193,7 @@ Created at: Fri Nov 24 16:39:14 +0000 2017
 </pre>
 
 
-### <a name ="movie-specified"></a> Display movie information for specified movie
+### <a name ="movie-specified"></a> Display movie information for specified movie (when movie name is 1 word)
 <pre>
 $ node liri.js movie-this Miracle
 =======================================================================================================
@@ -206,6 +207,23 @@ Filmed in: Canada, USA
 Language: English
 Movie plot: Miracle tells the true story of Herb Brooks (Kurt Russell), the player-turned-coach who led the 1980 U.S. Olympic hockey team to victory over the seemingly invincible Russian squad.
 Actors: Kurt Russell, Patricia Clarkson, Noah Emmerich, Sean McCann
+=======================================================================================================
+</pre>
+
+### <a name="movie-specified-two"></a> Display movie information for specified movie (when movie name is 2 words or longer)
+<pre>
+$ node liri.js movie-this social network
+=======================================================================================================
+liri command: movie-this  social network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+Rotten Tomatoes rating (out of 100%): 96%
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
 =======================================================================================================
 </pre>
 
