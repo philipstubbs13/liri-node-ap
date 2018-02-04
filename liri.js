@@ -42,27 +42,32 @@ if (liriCommand === "movie-this") {
 }
 
 //If the liriCommand is my-tweets, show last 20 tweets and when they were created in terminal window.
-if (liriCommand === "my-tweets") {
+else if (liriCommand === "my-tweets") {
 	//log liriCommand to log.txt.
 	logData("liri command: my-tweets");
 	getLatestTweets();
 }
 
 //If the liriCommand is spotify-this-song, show song info for the specified song.
-if (liriCommand === "spotify-this-song") {
+else if (liriCommand === "spotify-this-song") {
 	getSongInfo(songName);
 }
 
 //If the liriCommand is do-what-it-says, take the text inside of random.txt and then use it to run spotify-this-song for "I want it that way."
-if (liriCommand === "do-what-it-says") {
+else if (liriCommand === "do-what-it-says") {
 	//log liriCommand to log.txt.
 	logData("liri command: do-what-it-says");
 	doWhatItSays();
 }
 
 //If the liriCommand is help, display command line help page.
-if (liriCommand === "help") {
+else if (liriCommand === "help") {
 	showHelp();
+}
+
+//If the user enters a command that is not available, notify the user that the command was not found.
+else {
+	console.log("Command not found. Run 'node liri.js help' to see a list of available commands.");
 }
 
 //Get movie info function... Run this function to get movie info for the specified movie.
@@ -316,11 +321,11 @@ function showHelp() {
 			Description: "Shows the last 20 tweets from Twitter timeline and when they were created."
 			}, {
 
-			Command: "movie-this [movie name]",
+			Command: "movie-this [movie_name]",
 			Description: "Shows information about the specifid movie. If no movie is specified, Mr. Nobody is displayed by default."
 			}, {
 
-			Command: "spotify-this-song [song name]",
+			Command: "spotify-this-song [song_name]",
 			Description: "Shows top 10 songs on Spotify that have specified name. If no song is specified, The Sign by Ace of Base is displayed by default."
 			}, {
 
