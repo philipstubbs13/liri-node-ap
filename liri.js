@@ -73,7 +73,8 @@ else {
 //Get movie info function... Run this function to get movie info for the specified movie.
 function getMovieInfo() {
 
-	//If the movie name is longer than one word, join the words together on one line rather than having separate lines for each word.
+	//If the movie name is longer than one word, join the words together on one line so that the ovie name is all one string.
+	//Rather than having separate lines for each word.
 	for (var i = 3; i < input.length; i++) {
 
 	  if (i > 2 && i < input.length) {
@@ -242,6 +243,13 @@ function getSongInfo(songName) {
 		//Loop through the JSON data to display the top songs.
 		for (var i = 0; i < data.tracks.items.length; i++) {
 			var trackInfo = data.tracks.items[i];
+
+			//Create variable for song preview link.
+			var previewSong = trackInfo.preview_url;
+			//If the song preview is null (not available), tell the user that the song preview is not available.
+			if (previewSong === null) {
+				previewSong = "Song preview is not available for this song.";
+			}
 			//output the song results.
 			// \r\n is used as a new line character in Windows: https://stackoverflow.com/questions/15433188/r-n-r-n-what-is-the-difference-between-them 
 			var songResults = 
@@ -255,7 +263,7 @@ function getSongInfo(songName) {
 				//Output the song's name.
 				"Song title: " + trackInfo.name + "\r\n" +
 				//Output a preview link of the song from Spotify.
-				"Preview song: " + trackInfo.preview_url + "\r\n" +
+				"Preview song: " + previewSong + "\r\n" +
 				//Output the album that the song is from.
 				"Album: " + trackInfo.album.name + "\r\n" +
 				//Line break to keep log.txt file clean and organized.

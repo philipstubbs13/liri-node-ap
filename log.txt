@@ -1202,3 +1202,307 @@ Song title: I Want It That Way
 Preview song: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
 Album: The Hits--Chapter One
 ==========================================================================
+=======================================================================================================
+liri command: movie-this  baby
+=======================================================================================================
+Title: Million Dollar Baby
+Year movie was released: 2004
+IMDB movie rating (out of 10): 8.1
+Rotten Tomatoes rating (out of 100%): 91%
+Filmed in: USA
+Language: English, Irish
+Movie plot: A determined woman works with a hardened boxing trainer to become a professional.
+Actors: Clint Eastwood, Hilary Swank, Morgan Freeman, Jay Baruchel
+=======================================================================================================
+==========================================================================
+liri command: spotify-this-song
+Top 10 songs on Spotify with the name,  baby
+==========================================================================
+Song #1
+Artist: Kodak Black
+Song title: Roll In Peace (feat. XXXTENTACION)
+Preview song: https://p.scdn.co/mp3-preview/b77976d5bf4ec6cdb1bbb2f93d2c7782efb2e898?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Project Baby 2
+==========================================================================
+==========================================================================
+Song #2
+Artist: Kodak Black
+Song title: Codeine Dreaming (feat. Lil Wayne)
+Preview song: https://p.scdn.co/mp3-preview/07bee3c4a99114ff71275aa7b3db42fbde85aef4?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Project Baby 2: All Grown Up (Deluxe)
+==========================================================================
+==========================================================================
+Song #3
+Artist: Kodak Black
+Song title: Transportin'
+Preview song: https://p.scdn.co/mp3-preview/dc943e9eeed11c3ece97cbbc26c9b00fdf0367b8?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Project Baby 2
+==========================================================================
+==========================================================================
+Song #5
+Artist: YoungBoy Never Broke Again
+Song title: 38 Baby
+Preview song: https://p.scdn.co/mp3-preview/1393b7245756444891af155ea6e2975f099afb7e?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: 38 Baby
+==========================================================================
+==========================================================================
+Song #7
+Artist: Father John Misty
+Song title: Real Love Baby
+Preview song: https://p.scdn.co/mp3-preview/a73451291399b823c9f1b36d2f507dd0e5052c97?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Real Love Baby
+==========================================================================
+==========================================================================
+Song #4
+Artist: DRAM
+Song title: Broccoli
+Preview song: https://p.scdn.co/mp3-preview/4858b2a71d5c356c88960cef3e09923e01365631?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Big Baby DRAM
+==========================================================================
+==========================================================================
+Song #8
+Artist: Britney Spears
+Song title: ...Baby One More Time
+Preview song: https://p.scdn.co/mp3-preview/da2134a161f1cb34d17c2d6d7e77cc93d1c1e6f7?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: ...Baby One More Time (Digital Deluxe Version)
+==========================================================================
+==========================================================================
+Song #10
+Artist: White Noise For Baby Sleep
+Song title: White Noise Machine: a Lite Sleep Pillow Ambiance
+Preview song: https://p.scdn.co/mp3-preview/be6e4691c8a31e8a2cb60be55d96a66fba1595a2?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Sleep Sounds For Sleeping Soundly
+==========================================================================
+==========================================================================
+Song #6
+Artist: Justin Bieber
+Song title: Baby
+Preview song: null
+Album: My World 2.0
+==========================================================================
+==========================================================================
+Song #9
+Artist: Why Don't We
+Song title: Trust Fund Baby
+Preview song: https://p.scdn.co/mp3-preview/cb3a15733ae48ac56a8d48f5ee11560b37528105?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Trust Fund Baby
+==========================================================================
+==========================================================================
+liri command: spotify-this-song
+Top 10 songs on Spotify with the name,  baby
+==========================================================================
+Song #2
+Artist: Kodak Black
+Song title: Codeine Dreaming (feat. Lil Wayne)
+Preview song: https://p.scdn.co/mp3-preview/b77976d5bf4ec6cdb1bbb2f93d2c7782efb2e898?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Project Baby 2: All Grown Up (Deluxe)
+==========================================================================
+==========================================================================
+Song #1
+Artist: Kodak Black
+Song title: Roll In Peace (feat. XXXTENTACION)
+Preview song: undefined
+Album: Project Baby 2
+==========================================================================
+==========================================================================
+Song #3
+Artist: Kodak Black
+Song title: Transportin'
+Preview song: https://p.scdn.co/mp3-preview/07bee3c4a99114ff71275aa7b3db42fbde85aef4?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Project Baby 2
+==========================================================================
+==========================================================================
+Song #4
+Artist: DRAM
+Song title: Broccoli
+Preview song: https://p.scdn.co/mp3-preview/dc943e9eeed11c3ece97cbbc26c9b00fdf0367b8?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Big Baby DRAM
+==========================================================================
+==========================================================================
+Song #6
+Artist: Justin Bieber
+Song title: Baby
+Preview song: https://p.scdn.co/mp3-preview/1393b7245756444891af155ea6e2975f099afb7e?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: My World 2.0
+==========================================================================
+==========================================================================
+Song #5
+Artist: YoungBoy Never Broke Again
+Song title: 38 Baby
+Preview song: https://p.scdn.co/mp3-preview/4858b2a71d5c356c88960cef3e09923e01365631?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: 38 Baby
+==========================================================================
+==========================================================================
+Song #8
+Artist: Britney Spears
+Song title: ...Baby One More Time
+Preview song: https://p.scdn.co/mp3-preview/a73451291399b823c9f1b36d2f507dd0e5052c97?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: ...Baby One More Time (Digital Deluxe Version)
+==========================================================================
+==========================================================================
+Song #7
+Artist: Father John Misty
+Song title: Real Love Baby
+Preview song: Song preview is not available for this song
+Album: Real Love Baby
+==========================================================================
+==========================================================================
+Song #9
+Artist: Why Don't We
+Song title: Trust Fund Baby
+Preview song: https://p.scdn.co/mp3-preview/da2134a161f1cb34d17c2d6d7e77cc93d1c1e6f7?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Trust Fund Baby
+==========================================================================
+==========================================================================
+Song #10
+Artist: White Noise For Baby Sleep
+Song title: White Noise Machine: a Lite Sleep Pillow Ambiance
+Preview song: https://p.scdn.co/mp3-preview/cb3a15733ae48ac56a8d48f5ee11560b37528105?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Sleep Sounds For Sleeping Soundly
+==========================================================================
+==========================================================================
+liri command: spotify-this-song
+==========================================================================
+Song #1
+Artist: Kodak Black
+Song title: Roll In Peace (feat. XXXTENTACION)
+Preview song: https://p.scdn.co/mp3-preview/b77976d5bf4ec6cdb1bbb2f93d2c7782efb2e898?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Project Baby 2
+==========================================================================
+==========================================================================
+Song #2
+Artist: Kodak Black
+Song title: Codeine Dreaming (feat. Lil Wayne)
+Preview song: https://p.scdn.co/mp3-preview/07bee3c4a99114ff71275aa7b3db42fbde85aef4?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Project Baby 2: All Grown Up (Deluxe)
+==========================================================================
+==========================================================================
+Song #4
+Artist: DRAM
+Song title: Broccoli
+Preview song: https://p.scdn.co/mp3-preview/4858b2a71d5c356c88960cef3e09923e01365631?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Big Baby DRAM
+==========================================================================
+Top 10 songs on Spotify with the name,  baby
+==========================================================================
+Song #5
+Artist: YoungBoy Never Broke Again
+Song title: 38 Baby
+Preview song: https://p.scdn.co/mp3-preview/1393b7245756444891af155ea6e2975f099afb7e?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: 38 Baby
+==========================================================================
+==========================================================================
+Song #6
+Artist: Justin Bieber
+Song title: Baby
+Preview song: Song preview is not available for this song.
+Album: My World 2.0
+==========================================================================
+==========================================================================
+Song #7
+Artist: Father John Misty
+Song title: Real Love Baby
+Preview song: https://p.scdn.co/mp3-preview/a73451291399b823c9f1b36d2f507dd0e5052c97?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Real Love Baby
+==========================================================================
+==========================================================================
+Song #8
+Artist: Britney Spears
+Song title: ...Baby One More Time
+Preview song: https://p.scdn.co/mp3-preview/da2134a161f1cb34d17c2d6d7e77cc93d1c1e6f7?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: ...Baby One More Time (Digital Deluxe Version)
+==========================================================================
+==========================================================================
+Song #10
+Artist: White Noise For Baby Sleep
+Song title: White Noise Machine: a Lite Sleep Pillow Ambiance
+Preview song: https://p.scdn.co/mp3-preview/be6e4691c8a31e8a2cb60be55d96a66fba1595a2?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Sleep Sounds For Sleeping Soundly
+==========================================================================
+==========================================================================
+Song #3
+Artist: Kodak Black
+Song title: Transportin'
+Preview song: https://p.scdn.co/mp3-preview/dc943e9eeed11c3ece97cbbc26c9b00fdf0367b8?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Project Baby 2
+==========================================================================
+==========================================================================
+Song #9
+Artist: Why Don't We
+Song title: Trust Fund Baby
+Preview song: https://p.scdn.co/mp3-preview/cb3a15733ae48ac56a8d48f5ee11560b37528105?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Trust Fund Baby
+==========================================================================
+==========================================================================
+liri command: spotify-this-song
+Top 10 songs on Spotify with the name,  what ifs
+==========================================================================
+Song #1
+Artist: Kane Brown
+Song title: What Ifs
+Preview song: https://p.scdn.co/mp3-preview/9a1bc6de88d686138b641e6022a4b30c6e75de74?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Kane Brown
+==========================================================================
+==========================================================================
+Song #2
+Artist: Kane Brown
+Song title: What Ifs
+Preview song: https://p.scdn.co/mp3-preview/38694be1b7496f8ff0f308340855c9d8dfc5cf01?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Kane Brown (Deluxe Edition)
+==========================================================================
+==========================================================================
+Song #4
+Artist: boyChild
+Song title: Counting What Ifs (feat. Soundmouse) - Original
+Preview song: https://p.scdn.co/mp3-preview/70d964d280f453940f23b78f5bc8233742ebbc2e?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #3
+Artist: Kane Brown
+Song title: What Ifs (Remix)
+Preview song: https://p.scdn.co/mp3-preview/b05441ecafdf40446beb4bc8f8835b1a2421d447?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: What Ifs (Remix)
+==========================================================================
+==========================================================================
+Song #5
+Artist: boyChild
+Song title: Counting What Ifs (feat. Soundmouse) - Darkhorse Ambient Room Remix
+Preview song: https://p.scdn.co/mp3-preview/307753756f5d7f6cdebc8112a50bf31512bdb7d6?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #6
+Artist: Melanie Baker
+Song title: What Ifs
+Preview song: https://p.scdn.co/mp3-preview/9de234644b9cc922ae56869b0b7f98a2d62c16cf?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: What Ifs
+==========================================================================
+==========================================================================
+Song #7
+Artist: boyChild
+Song title: Counting What Ifs - Vika Remix
+Preview song: https://p.scdn.co/mp3-preview/f672b9ef58af0e8a32f5525ae52e312716253db3?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #9
+Artist: boyChild
+Song title: Counting What Ifs (feat. Soundmouse) - No Beats
+Preview song: https://p.scdn.co/mp3-preview/0d1d44193e56b600f0f549591ddb7145fab70b52?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #8
+Artist: Jaguar Wright
+Song title: The What If's
+Preview song: Song preview is not available for this song.
+Album: Denials Delusions And Decisions
+==========================================================================
+==========================================================================
+Song #10
+Artist: Ryan Krysiak
+Song title: What Ifs (feat. Brenna Nicole Bone)
+Preview song: https://p.scdn.co/mp3-preview/7b49eeca51d768df6692c553973484c212171015?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: What Ifs (feat. Brenna Nicole Bone)
+==========================================================================
