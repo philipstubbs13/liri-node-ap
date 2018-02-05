@@ -1,6 +1,6 @@
 # LIRI
 
-<p>LIRI is like iPhone's SIRI or Google's Google Assistant (if you're not an Apple person like me). However, while SIRI and Google Assistant are a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back tweets, songs, and movies.</p>
+<p>LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back tweets, songs, and movies.</p>
 
 ## Table of contents
   * [About this project](#about-this-project)
@@ -38,11 +38,12 @@ The following are dependencies to the project:
 	<li>Request node package (https://www.npmjs.com/package/request) - used to send requests to OMDB API and receive movie information.</li>
 	<li>DotEnv node package (https://www.npmjs.com/package/dotenv) - used to load environment variables from a .env file into process.env.</li>
 	<li>Columnify node package (https://www.npmjs.com/package/columnify) - used to display terminal output in columns.</li>
+  <li>Figlet node package (https://www.npmjs.com/package/figlet) - used to convert text into ASCII art - drawings made out of text characters.</li>
 </ul>
 <p>Version information for each of these packages is available in the package.json file in the project root directory.</p>
 
 ### <a name="command-reference"></a> Running LIRI from the command line
-<p>In LIRI version 1.0, there are four commands that you can run. These commands allow you to receive access to a list of tweets from Twitter, song information from Spotify, and movie information from OMDB. Review the command syntax and various arguments you can use for the command you want to run.</p>
+<p>In LIRI, there are five commands that you can run. These commands allow you to receive access to a list of tweets from Twitter, song information from Spotify, and movie information from OMDB. Review the command syntax and various arguments you can use for the command you want to run.</p>
 
 #### <a name="command-syntax"></a> Command line syntax
 <p>The syntax for the LIRI command line interface is:</p>
@@ -57,6 +58,7 @@ my-tweets | Shows the last 20 tweets from Twitter timeline and when they were cr
 movie-this [movie_name] | Shows information about the specifid movie. The movie name is optional. If no movie is specified, Mr. Nobody is displayed by default.
 spotify-this-song [song_name] | Shows top 10 songs on Spotify that have specified name. Song name is optional. If no song is specified, The Sign by Ace of Base is displayed by default.
 do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that way.
+help | Shows help information for each command.
 
 
 ## <a name="structure-of-project"></a> Structure of the project
@@ -67,7 +69,9 @@ do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that
 	<li><b>liri.js</b>: Contains the code that is used to run the application from the command line.</li>
 	<li><b>log.txt</b>: App log file. When you run a command, data gets logged to the terminal as well as to the log.txt file in the project's root directory.</li>
 	<li><b>package.json</b>: Lists the project dependencies (third party npm packages) and their version numbers.</li>
-	<li><b>random.txt</b>: Used to run the do-what-it-says command.</li>
+	<li><b>random.txt</b>: Information inside this file is used to run the do-what-it-says command.</li>
+  <li><b>.gitignore</b>: Any file or directory listed inside this file will not be committed to GitHub when code is checked in.</li>
+  <li><b>package-lock.json</b>: Dependency tree for the project. Lists all the dependencies and their versions.</li>
 </ul>
 
 ## <a name="examples"></a> Examples
@@ -75,6 +79,12 @@ do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that
 ### <a name ="tweets"></a> Display last 20 tweets
 <pre>
 $ node liri.js my-tweets
+  __  __         _                     _
+ |  \/  |_   _  | |___      _____  ___| |_ ___
+ | |\/| | | | | | __\ \ /\ / / _ \/ _ \ __/ __|
+ | |  | | |_| | | |_ \ V  V /  __/  __/ |_\__ \
+ |_|  |_|\__, |  \__| \_/\_/ \___|\___|\__|___/
+         |___/
 
 My last 20 tweets
 ==========================================================================
@@ -196,6 +206,12 @@ Created at: Fri Nov 24 16:39:14 +0000 2017
 ### <a name ="movie-specified"></a> Display movie information for specified movie (when movie name is 1 word)
 <pre>
 $ node liri.js movie-this Miracle
+   __  __ _                _
+  |  \/  (_)_ __ __ _  ___| | ___
+  | |\/| | | '__/ _` |/ __| |/ _ \
+  | |  | | | | | (_| | (__| |  __/
+  |_|  |_|_|_|  \__,_|\___|_|\___|
+
 =======================================================================================================
 liri command: movie-this Miracle
 =======================================================================================================
@@ -212,7 +228,13 @@ Actors: Kurt Russell, Patricia Clarkson, Noah Emmerich, Sean McCann
 
 ### <a name="movie-specified-two"></a> Display movie information for specified movie (when movie name is 2 words or longer)
 <pre>
-$ node liri.js movie-this social network
+$ node liri.js movie-this Social Network
+   ____             _       _   _   _      _                      _
+  / ___|  ___   ___(_) __ _| | | \ | | ___| |___      _____  _ __| | __
+  \___ \ / _ \ / __| |/ _` | | |  \| |/ _ \ __\ \ /\ / / _ \| '__| |/ /
+   ___) | (_) | (__| | (_| | | | |\  |  __/ |_ \ V  V / (_) | |  |   <
+  |____/ \___/ \___|_|\__,_|_| |_| \_|\___|\__| \_/\_/ \___/|_|  |_|\_\
+
 =======================================================================================================
 liri command: movie-this  social network
 =======================================================================================================
@@ -230,6 +252,12 @@ Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
 ### <a name ="movie-not-specified"></a> Display movie information for Mr. Nobody when no movie is specified
 <pre>
 $ node liri.js movie-this
+  __  __        _   _       _               _
+ |  \/  |_ __  | \ | | ___ | |__   ___   __| |_   _
+ | |\/| | '__| |  \| |/ _ \| '_ \ / _ \ / _` | | | |
+ | |  | | |    | |\  | (_) | |_) | (_) | (_| | |_| |
+ |_|  |_|_|    |_| \_|\___/|_.__/ \___/ \__,_|\__, |
+                                              |___/
 =======================================================================================================
 liri command: movie-this Mr Nobody
 =======================================================================================================
@@ -246,7 +274,13 @@ Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
 
 ### <a name ="spotify-this-song"></a> Display top 10 songs on Spotify for the specified song name
 <pre>
-$ node liri.js spotify-this-song What ifs
+$ node liri.js spotify-this-song What Ifs
+  __        ___           _     ___  __
+  \ \      / / |__   __ _| |_  |_ _|/ _|___
+   \ \ /\ / /| '_ \ / _` | __|  | || |_/ __|
+    \ V  V / | | | | (_| | |_   | ||  _\__ \
+     \_/\_/  |_| |_|\__,_|\__| |___|_| |___/
+
 Top 10 songs on Spotify with the name,  What ifs
 ==========================================================================
 Song #1
@@ -324,6 +358,12 @@ Album: What Ifs (feat. Brenna Nicole Bone)
 ### <a name = "do-what-it-says"></a> Display top 10 songs on Spotify for the song, I want it that way
 <pre>
 $ node liri.js do-what-it-says
+  _ _ ___  __        __          _     _ _     _____ _           _    __        __          _ _
+ ( | )_ _| \ \      / /_ _ _ __ | |_  (_) |_  |_   _| |__   __ _| |_  \ \      / /_ _ _   _( | )
+  V V | |   \ \ /\ / / _` | '_ \| __| | | __|   | | | '_ \ / _` | __|  \ \ /\ / / _` | | | |V V
+      | |    \ V  V / (_| | | | | |_  | | |_    | | | | | | (_| | |_    \ V  V / (_| | |_| |
+     |___|    \_/\_/ \__,_|_| |_|\__| |_|\__|   |_| |_| |_|\__,_|\__|    \_/\_/ \__,_|\__, |
+                                                                                      |___/
 Top 10 songs on Spotify with the name, "I Want it That Way"
 ==========================================================================
 Song #1
@@ -400,6 +440,12 @@ Album: I Want It That Way
 ### <a name = "song-not-specified"></a> Display song information for The Sign by Ace of Base when no song is specified
 <pre>
 $ node liri.js spotify-this-song
+  _____ _            ____  _
+ |_   _| |__   ___  / ___|(_) __ _ _ __
+   | | | '_ \ / _ \ \___ \| |/ _` | '_ \
+   | | | | | |  __/  ___) | | (_| | | | |
+   |_| |_| |_|\___| |____/|_|\__, |_| |_|
+                             |___/
 Artist: Ace of Base
 Song title: The Sign
 Preview song: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
