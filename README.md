@@ -10,6 +10,7 @@
   	* [Running LIRI from the command line](#command-reference)
   		* [Command line syntax](#command-syntax)
   		* [Available commands](#available-commands)
+      * [Command line arguments](#argments)
   * [Structure of the project](#structure-of-project)
   * [Examples](#examples)
   	* [Display last 20 tweets](#tweets)
@@ -50,7 +51,7 @@ The following are dependencies to the project:
 <pre>node liri.js <i>command</i> [<i>arguments</i>]</pre>
 
 #### <a name="available-commands"></a> Available commands
-<p>There are four LIRI commands available from the command line.</p>
+<p>There are five LIRI commands available from the command line.</p>
 
 Command | Description
 ------------ | -------------
@@ -60,6 +61,12 @@ spotify-this-song [song_name] | Shows top 10 songs on Spotify that have specifie
 do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that way.
 help | Shows help information for each command.
 
+#### <a name='arguments'></a> Command line arguments
+<p>For the movie-this and spotify-this-song commands, you can pass an argument specifying the name of a movie (for movie-this) or the name of a song (for spotify-this-song).These arguments are optional.</p> 
+<ul>
+  <li>If no movie is passed to the movie-this command, then movie information will be displayed for the movie, Mr. Nobody, by default.</li>
+  <li>If no song is passed to the spotify-this-song command, then song information will be displayed for the song, The Sign by Ace of Base, by default.</li>
+</ul>
 
 ## <a name="structure-of-project"></a> Structure of the project
 <p>The project directory structure is setup as follows:</p>
