@@ -6,6 +6,7 @@
   "dependencies": {
     "columnify": "^1.5.4",
     "dotenv": "^4.0.0",
+    "figlet": "^1.2.0",
     "node-spotify-api": "^1.0.7",
     "twitter": "^1.7.1"
   },

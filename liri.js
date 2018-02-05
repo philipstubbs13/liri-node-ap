@@ -13,6 +13,9 @@ var Twitter = require('twitter');
 //https://www.npmjs.com/package/columnify
 var columnify = require('columnify')
 
+//Grab the figlet package, which allows you to create ASCII Art from text.
+var figlet = require('figlet');
+
 // fs is a core Node package for reading and writing files
 var fs = require("fs");
 
@@ -35,14 +38,31 @@ var songName = "";
 //Code to access keys information.
 //var client = new Twitter(keys.twitter);
 
+
 //If the liriCommand is movie-this and a movieName is provided...
 //Output information about that movie.
 if (liriCommand === "movie-this") {
+	figlet('Movie this', function(err, data) {
+	    if (err) {
+	        console.log('Something went wrong...');
+	        console.dir(err);
+	        return;
+	    }
+	    console.log(data)
+	});
 	getMovieInfo();
 }
 
 //If the liriCommand is my-tweets, show last 20 tweets and when they were created in terminal window.
 else if (liriCommand === "my-tweets") {
+	figlet('My tweets', function(err, data) {
+	    if (err) {
+	        console.log('Something went wrong...');
+	        console.dir(err);
+	        return;
+	    }
+	    console.log(data)
+	});
 	//log liriCommand to log.txt.
 	logData("liri command: my-tweets");
 	getLatestTweets();
@@ -50,11 +70,27 @@ else if (liriCommand === "my-tweets") {
 
 //If the liriCommand is spotify-this-song, show song info for the specified song.
 else if (liriCommand === "spotify-this-song") {
+	figlet('Spotify this song', function(err, data) {
+	    if (err) {
+	        console.log('Something went wrong...');
+	        console.dir(err);
+	        return;
+	    }
+	    console.log(data)
+	});
 	getSongInfo(songName);
 }
 
 //If the liriCommand is do-what-it-says, take the text inside of random.txt and then use it to run spotify-this-song for "I want it that way."
 else if (liriCommand === "do-what-it-says") {
+	figlet('Do what it says', function(err, data) {
+	    if (err) {
+	        console.log('Something went wrong...');
+	        console.dir(err);
+	        return;
+	    }
+	    console.log(data)
+	});
 	//log liriCommand to log.txt.
 	logData("liri command: do-what-it-says");
 	doWhatItSays();
@@ -62,6 +98,14 @@ else if (liriCommand === "do-what-it-says") {
 
 //If the liriCommand is help, display command line help page.
 else if (liriCommand === "help") {
+	figlet('LIRI help', function(err, data) {
+	    if (err) {
+	        console.log('Something went wrong...');
+	        console.dir(err);
+	        return;
+	    }
+	    console.log(data)
+	});
 	showHelp();
 }
 
@@ -100,6 +144,13 @@ function getMovieInfo() {
 			//Parse the body of the JSON object that holds the movie data and display the movie info.
 			var movieInfo = JSON.parse(body);
 			//console.log(movieInfo);
+
+			//Create variable for rotten tomatoes rating.
+			var tomatoRating = movieInfo.Ratings[1].Value;
+
+			if (tomatoRating == 'null') {
+				tomatoRating = "Rating not available for this movie.";
+			}
 			//Output the following information about movieName.
 			// \r\n is used as a new line character in Windows: https://stackoverflow.com/questions/15433188/r-n-r-n-what-is-the-difference-between-them 
 			var movieResult = 
@@ -116,7 +167,7 @@ function getMovieInfo() {
 				//IMDB Rating of the movie.
 				"IMDB movie rating (out of 10): " + movieInfo.imdbRating + "\r\n" +
 				//Rotten Tomatoes rating of the movie.
-				"Rotten Tomatoes rating (out of 100%): " + movieInfo.Ratings[1].Value + "\r\n" +
+				"Rotten Tomatoes rating (out of 100%): " + tomatoRating + "\r\n" +
 				//Country where the movie was produced.
 				"Filmed in: " + movieInfo.Country + "\r\n" +
 				//Language of the movie.
