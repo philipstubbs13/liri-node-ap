@@ -12,10 +12,8 @@ var Twitter = require('twitter');
 //Grab columnify package to display command line help output in columns.
 //https://www.npmjs.com/package/columnify
 var columnify = require('columnify')
-
-//Grab the figlet package, which allows you to create ASCII Art from text.
+//Grab the figlet package to create drawings from text.
 var figlet = require('figlet');
-
 // fs is a core Node package for reading and writing files
 var fs = require("fs");
 
@@ -42,27 +40,11 @@ var songName = "";
 //If the liriCommand is movie-this and a movieName is provided...
 //Output information about that movie.
 if (liriCommand === "movie-this") {
-	figlet('Movie this', function(err, data) {
-	    if (err) {
-	        console.log('Something went wrong...');
-	        console.dir(err);
-	        return;
-	    }
-	    console.log(data)
-	});
 	getMovieInfo();
 }
 
 //If the liriCommand is my-tweets, show last 20 tweets and when they were created in terminal window.
 else if (liriCommand === "my-tweets") {
-	figlet('My tweets', function(err, data) {
-	    if (err) {
-	        console.log('Something went wrong...');
-	        console.dir(err);
-	        return;
-	    }
-	    console.log(data)
-	});
 	//log liriCommand to log.txt.
 	logData("liri command: my-tweets");
 	getLatestTweets();
@@ -70,27 +52,11 @@ else if (liriCommand === "my-tweets") {
 
 //If the liriCommand is spotify-this-song, show song info for the specified song.
 else if (liriCommand === "spotify-this-song") {
-	figlet('Spotify this song', function(err, data) {
-	    if (err) {
-	        console.log('Something went wrong...');
-	        console.dir(err);
-	        return;
-	    }
-	    console.log(data)
-	});
 	getSongInfo(songName);
 }
 
 //If the liriCommand is do-what-it-says, take the text inside of random.txt and then use it to run spotify-this-song for "I want it that way."
 else if (liriCommand === "do-what-it-says") {
-	figlet('Do what it says', function(err, data) {
-	    if (err) {
-	        console.log('Something went wrong...');
-	        console.dir(err);
-	        return;
-	    }
-	    console.log(data)
-	});
 	//log liriCommand to log.txt.
 	logData("liri command: do-what-it-says");
 	doWhatItSays();
@@ -98,14 +64,6 @@ else if (liriCommand === "do-what-it-says") {
 
 //If the liriCommand is help, display command line help page.
 else if (liriCommand === "help") {
-	figlet('LIRI help', function(err, data) {
-	    if (err) {
-	        console.log('Something went wrong...');
-	        console.dir(err);
-	        return;
-	    }
-	    console.log(data)
-	});
 	showHelp();
 }
 
@@ -134,6 +92,16 @@ function getMovieInfo() {
 	 	//If no movie is specified, set movieName equal to Mr. Nobody.
 	 	movieName = "Mr Nobody";
 	}
+
+	//Use the figlet npm package to convert the movieName text to art/drawing.
+	figlet(movieName, function(err, data) {
+	    if (err) {
+	        console.log('Something went wrong...');
+	        console.dir(err);
+	        return;
+	    }
+	    console.log(data)
+	});
 	
 
 	//Then, run a request to the OMDB API with the movieName value.
@@ -189,6 +157,15 @@ function getMovieInfo() {
 
 //Get tweets function... Run this function to get last 20 tweets and when they were created.
 function getLatestTweets(){
+	//Use figlet npm package to convert text to art/drawing.
+    figlet('My tweets', function(err, data) {
+	    if (err) {
+	        console.log('Something went wrong...');
+	        console.dir(err);
+	        return;
+	    }
+    console.log(data)
+	});
 
 	//Code to access Twitter keys information.
 	var client = new Twitter({
@@ -253,6 +230,16 @@ function getSongInfo(songName) {
 		//If no song is specified, set the songName variable to "The Sign."
 		songName = "The Sign";
 	}
+
+	//Use the figlet npm package to convert songName text to art/drawing.
+	figlet(songName, function(err, data) {
+	    if (err) {
+	        console.log('Something went wrong...');
+	        console.dir(err);
+	        return;
+	    }
+	    console.log(data)
+	});
 
 	//Use the Spotify package to search for a song/track. Set search results limit to 10.
 	spotify.search({ type: 'track', query: songName, limit: 10 }, function(err, data) {
@@ -374,6 +361,15 @@ function logData(logResults) {
 
 //Function to show command line help. Using columnify npm package to display contents in columns.
 function showHelp() {
+	//Use figlet npm package to convert text to art/drawing.
+	figlet('LIRI help', function(err, data) {
+	    if (err) {
+	        console.log('Something went wrong...');
+	        console.dir(err);
+	        return;
+	    }
+	    console.log(data)
+	});
 	var helpInfo = "Usage: node liri.js <command> [arguments]" 
 	var helpColumns = columnify([{
 			Command: 'my-tweets',
