@@ -10,7 +10,7 @@
   	* [Running LIRI from the command line](#command-reference)
   		* [Command line syntax](#command-syntax)
   		* [Available commands](#available-commands)
-      * [Command line arguments](#argments)
+      * [Command line arguments](#arguments)
   * [Structure of the project](#structure-of-project)
   * [Examples](#examples)
   	* [Display last 20 tweets](#tweets)
