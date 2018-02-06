@@ -258,18 +258,21 @@ function getSongInfo(songName) {
 
 	//If no song is provided, then the app will default to "The Sign" by Ace of Base.
 	if (songName === "The Sign") {
+		//output the default song information
+		var defaultSong = 
 		//Output the artist
-		console.log("Artist: " + data.tracks.items[5].artists[0].name);
-		logData("Artist: " + data.tracks.items[5].artists[0].name); 
+		"Artist: " + data.tracks.items[5].artists[0].name + "\r\n" + 
 		//Output the song's name.
-		console.log("Song title: " + data.tracks.items[5].name)
-		logData("Song title: " + data.tracks.items[5].name);
+		"Song title: " + data.tracks.items[5].name + "\r\n" +
 		//Output a preview link of the song from Spotify.
-		console.log("Preview song: " + data.tracks.items[5].preview_url);
-		logData("Preview song: " + data.tracks.items[5].preview_url);
+		"Preview song: " + data.tracks.items[5].preview_url + "\r\n" +
 		//Output the album that the song is from.
-		console.log("Album: " + data.tracks.items[5].album.name);
-		logData("Album: " + data.tracks.items[5].album.name);
+		"Album: " + data.tracks.items[5].album.name + "\r\n" 
+
+		//Output default song info to terminal
+		console.log (defaultSong);
+		//Output default song info to log.txt file.
+		logData(defaultSong);
 		logData("==========================================================================");
 	}
 

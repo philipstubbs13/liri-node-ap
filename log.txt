@@ -2368,3 +2368,355 @@ liri command: spotify-this-song
 liri command: spotify-this-song
 liri command: spotify-this-song
 ==========================================================================
+==========================================================================
+liri command: spotify-this-song
+Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+Preview song: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Song title: The Sign
+==========================================================================
+liri command: spotify-this-song
+==========================================================================
+Top 10 songs on Spotify with the name,  Life is a Highway
+==========================================================================
+Song #2
+Artist: Tom Cochrane
+Song title: Life Is A Highway
+Preview song: Song preview is not available for this song.
+Album: Mad Mad World
+==========================================================================
+==========================================================================
+Song #4
+Artist: Rascal Flatts
+Song title: Life Is A Highway - From "Cars"
+Preview song: Song preview is not available for this song.
+Album: Disney/Pixar Greatest
+==========================================================================
+==========================================================================
+Song #5
+Artist: Rascal Flatts
+Song title: Life Is A Highway
+Preview song: Song preview is not available for this song.
+Album: Cars (Original Motion Picture Soundtrack)
+==========================================================================
+==========================================================================
+Song #3
+Artist: Rascal Flatts
+Song title: Life Is A Highway - Remastered Version
+Preview song: Song preview is not available for this song.
+Album: Greatest Hits Volume 1
+==========================================================================
+==========================================================================
+Song #1
+Artist: Rascal Flatts
+Song title: Life is a Highway
+Preview song: Song preview is not available for this song.
+Album: Me And My Gang
+==========================================================================
+==========================================================================
+Song #6
+Artist: Tom Cochrane
+Song title: Life Is A Highway
+Preview song: Song preview is not available for this song.
+Album: Mad Mad World (Deluxe)
+==========================================================================
+==========================================================================
+Song #7
+Artist: Home Free
+Song title: Life is a Highway
+Preview song: https://p.scdn.co/mp3-preview/3ac6b1be72f066c99ca0bb2a76af54008b9cf196?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Timeless
+==========================================================================
+==========================================================================
+Song #8
+Artist: Chris LeDoux
+Song title: Life Is A Highway
+Preview song: Song preview is not available for this song.
+Album: Classic Chris LeDoux
+==========================================================================
+==========================================================================
+Song #9
+Artist: Chris LeDoux
+Song title: Life Is A Highway
+Preview song: Song preview is not available for this song.
+Album: The Ultimate Collection
+==========================================================================
+==========================================================================
+Song #10
+Artist: Rascal Flatts
+Song title: Life Is a Highway
+Preview song: Song preview is not available for this song.
+Album: The Best of Rascal Flatts LIVE
+==========================================================================
+=======================================================================================================
+liri command: movie-this  social network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+Rotten Tomatoes rating (out of 100%): 96%
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
+=======================================================================================================
+liri command: my-tweets
+My last 20 tweets
+==========================================================================
+Tweet #1
+Tweet: RT @espn: https://t.co/ZMrMwvdUj9
+Created at: Mon Feb 05 00:51:25 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #2
+Tweet: RT @NOTSportsCenter: Tom Brady, trying to catch a pass: #SuperBowl https://t.co/fZlzALlwKW
+Created at: Mon Feb 05 00:50:16 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #3
+Tweet: Need something to do at your #superbowl #party? Try your luck at this trivia game I created: https://t.co/EzAOtCvX7J
+Created at: Sun Feb 04 23:15:42 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #4
+Tweet: RT @AdamSchefter: A postcard from Minneapolis and Super Bowl LII, via @ronberk1: https://t.co/RCFsU0zprP
+Created at: Sun Feb 04 14:26:42 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #5
+Tweet: RT @Sports_Spectrum: "Our number one goal is to make disciples." 
+- #Eagles tight end Zach Ertz (@ZERTZ_86 ) at the #superbowl in Minneapol…
+Created at: Sun Feb 04 14:25:41 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #6
+Tweet: RT @Espngreeny: The skyways in this town are everything they are said to be. #Minneapolis #SuperBowl
+Created at: Sun Feb 04 14:22:18 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #7
+Tweet: RT @1Tyus: #AllEyesNorth
+Created at: Sun Feb 04 12:10:49 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #8
+Tweet: RT @rickyrubio9: 5 W in a row... keep it going. https://t.co/lo8gxFQtsJ
+Created at: Sun Feb 04 12:08:06 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #10
+Tweet: RT @ForeignPolicy: Game of Drones. https://t.co/JqHQJOSvCI
+Created at: Sat Feb 03 15:33:47 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #9
+Tweet: RT @amazonecho: Alexa Loses Her Voice – Amazon Super Bowl LII Commercial #AskAlexa https://t.co/DTbOYPdsFk
+Created at: Sat Feb 03 15:36:31 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #11
+Tweet: RT @USATODAY: Pizza for breakfast? We're in. https://t.co/LM4AhGmAF0 https://t.co/kTNtJfx8oN
+Created at: Sat Feb 03 15:31:53 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #12
+Tweet: RT @Hasselbeck: When in Minnesota ❄️ 🎣 ❄️ https://t.co/FAuNC6ebaQ
+Created at: Sat Feb 03 15:30:17 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #13
+Tweet: RT @JoeCStrib: #Patriots defense not loaded with star power, but filled with playmakers when it counts:  
+https://t.co/jacu10yTIU https://t…
+Created at: Sat Feb 03 15:29:47 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #14
+Tweet: Check out this cool recipe app: https://t.co/S8t06EnYif #recipe #food #recipeapp #mycookingassistant #sohungry
+Created at: Thu Feb 01 03:41:47 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #15
+Tweet: RT @NOTSportsCenter: When you know you’re about to get fired and you just DGAF anymore https://t.co/phbBNKxZMH
+Created at: Sat Jan 27 03:02:24 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #16
+Tweet: RT @TheFostersTV: "What is an American?" ✊🏻✊🏼✊🏽✊🏾✊🏿 
+______
+Song: "Don't Give Up" by @RyanStar https://t.co/FvJkDkZLZi
+Created at: Sat Jan 27 03:01:53 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #17
+Tweet: RT @Fullscreen: Awwwwkward. https://t.co/PrsaEcBsd9
+Created at: Mon Jan 01 06:32:42 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #18
+Tweet: RT @KarlTowns: Happy New Years to everyone! Hope 2018 brings everyone blessings, positivity, and success! God bless!
+Created at: Mon Jan 01 05:25:52 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #19
+Tweet: RT @NFL: 2017 Division WINNERS! https://t.co/4KZyG4dR5y
+Created at: Mon Jan 01 03:43:26 +0000 2018
+==========================================================================
+==========================================================================
+Tweet #20
+Tweet: RT @DukeMBB: If you start watching the 2015 National Championship Game on your DVR at about 10:51:41 PM and skip commercials/halftime, Tyus…
+Created at: Mon Jan 01 03:43:07 +0000 2018
+==========================================================================
+==========================================================================
+liri command: spotify-this-song
+==========================================================================
+Artist: Ace of Base
+Song title: The Sign
+Preview song: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: The Sign (US Album) [Remastered]
+
+liri command: spotify-this-song
+==========================================================================
+Top 10 songs on Spotify with the name,  My Wish
+==========================================================================
+Song #4
+Artist: Britney Spears
+Song title: My Only Wish (This Year)
+Preview song: https://p.scdn.co/mp3-preview/296beb593b49998650e8fcac0a4b804dc1501ee4?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Christmas Hits
+==========================================================================
+==========================================================================
+Song #1
+Artist: Rascal Flatts
+Song title: My Wish
+Preview song: Song preview is not available for this song.
+Album: Me And My Gang
+==========================================================================
+==========================================================================
+Song #5
+Artist: Britney Spears
+Song title: My Only Wish (This Year)
+Preview song: https://p.scdn.co/mp3-preview/f367d1ca5b7fc3ee3e9c96b1b0fefda3f263d2fb?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Platinum Christmas
+==========================================================================
+==========================================================================
+Song #3
+Artist: Anthem Lights
+Song title: Class of 2017 Mash-Up: My Wish / I Hope You Dance / The Climb / I Lived
+Preview song: https://p.scdn.co/mp3-preview/4bbd3541aea111986aff404e9104ade495958ce9?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Class of 2017 Mash-Up: My Wish / I Hope You Dance / The Climb / I Lived
+==========================================================================
+==========================================================================
+Song #2
+Artist: Britney Spears
+Song title: My Only Wish (This Year)
+Preview song: https://p.scdn.co/mp3-preview/5de8df23e807eb62be3718513c86f002312e2667?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: My Pop Christmas
+==========================================================================
+==========================================================================
+Song #8
+Artist: Kojo Funds
+Song title: My Wish (feat. Kranium)
+Preview song: https://p.scdn.co/mp3-preview/fc80c60060cdd325e04b1dd15f53977ee929cc9e?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: My Wish (feat. Kranium)
+==========================================================================
+==========================================================================
+Song #9
+Artist: Lakeside
+Song title: Something About That Woman
+Preview song: https://p.scdn.co/mp3-preview/e0c954ec91c9c9aa791e97d78174f0411030d842?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Your Wish Is My Command
+==========================================================================
+==========================================================================
+Song #10
+Artist: Nina Simone
+Song title: I Wish I Knew How It Would Feel to Be Free
+Preview song: https://p.scdn.co/mp3-preview/602db7b1b04ea638a844731b27c72430f27343b7?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: The Very Best Of Nina Simone 1967-1972 - Sugar In My Bowl
+==========================================================================
+==========================================================================
+Song #7
+Artist: Rascal Flatts
+Song title: My Wish - 10th Anniversary
+Preview song: Song preview is not available for this song.
+Album: My Wish (10th Anniversary)
+==========================================================================
+==========================================================================
+Song #6
+Artist: The Knocks
+Song title: I Wish (My Taylor Swift)
+Preview song: https://p.scdn.co/mp3-preview/24a28991dc0dc34e1602bf63080b1c12b1d9fa2d?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: 55
+==========================================================================
+==========================================================================
+liri command: spotify-this-song
+Top 10 songs on Spotify with the name,  The Climb
+==========================================================================
+Song #1
+Artist: Miley Cyrus
+Song title: The Climb
+Preview song: Song preview is not available for this song.
+Album: Hannah Montana The Movie
+==========================================================================
+==========================================================================
+Song #4
+Artist: Yellow Days
+Song title: The Tree I Climb
+Preview song: https://p.scdn.co/mp3-preview/aa83af30582f98e6ef3d0532262aba59dd8e4400?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Is Everything Okay in Your World?
+==========================================================================
+==========================================================================
+Song #3
+Artist: Widespread Panic
+Song title: Climb to Safety
+Preview song: https://p.scdn.co/mp3-preview/4d6f1af2c11740b76ad82d2db0e7d35deebd5940?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Til the Medicine Takes
+==========================================================================
+==========================================================================
+Song #5
+Artist: Bilmuri
+Song title: The Climb
+Preview song: https://p.scdn.co/mp3-preview/0ee9ecdb74f839ccbc82f93e19eb655310d6929d?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: The Climb
+==========================================================================
+==========================================================================
+Song #2
+Artist: Anthem Lights
+Song title: Class of 2017 Mash-Up: My Wish / I Hope You Dance / The Climb / I Lived
+Preview song: https://p.scdn.co/mp3-preview/4bbd3541aea111986aff404e9104ade495958ce9?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Class of 2017 Mash-Up: My Wish / I Hope You Dance / The Climb / I Lived
+==========================================================================
+==========================================================================
+Song #6
+Artist: Will Reagan
+Song title: Climb (Live)
+Preview song: https://p.scdn.co/mp3-preview/eaa709c8d49092d053e7540b644aca2944a4f5a9?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Live at the Banks House
+==========================================================================
+==========================================================================
+Song #7
+Artist: Anthem Lights
+Song title: Class of 2017 Mash-Up: My Wish / I Hope You Dance / The Climb / I Lived
+Preview song: https://p.scdn.co/mp3-preview/4bbd3541aea111986aff404e9104ade495958ce9?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: We Got You Covered, Vol. 2
+==========================================================================
+==========================================================================
+Song #10
+Artist: The Original Broadway Cast Of School Of Rock
+Song title: When I Climb To The Top Of Mount Rock
+Preview song: https://p.scdn.co/mp3-preview/702c78d1285d770a192b6d3e1ca292f8002b5d48?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: School of Rock - The Musical (Original Cast Recording)
+==========================================================================
+==========================================================================
+Song #8
+Artist: No Doubt
+Song title: The Climb
+Preview song: Song preview is not available for this song.
+Album: Tragic Kingdom
+==========================================================================
+==========================================================================
+Song #9
+Artist: Boyce Avenue
+Song title: The Climb
+Preview song: https://p.scdn.co/mp3-preview/5a5803d841b0b9de03cbdd97a85ad6023a163484?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Cover Sessions, Vol. 5
+==========================================================================
