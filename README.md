@@ -6,11 +6,10 @@
   * [About this project](#about-this-project)
   * [Live](#live)
   * [Getting started](#contribute)
-  	* [Dependencies](#dependencies)
-  	* [Running LIRI from the command line](#command-reference)
-  		* [Command line syntax](#command-syntax)
-  		* [Available commands](#available-commands)
-      * [Command line arguments](#arguments)
+  * [Running LIRI from the command line](#command-reference)
+  	* [Command line syntax](#command-syntax)
+  	* [Available commands](#available-commands)
+    * [Command line arguments](#arguments)
   * [Structure of the project](#structure-of-project)
   * [Examples](#examples)
   	* [Display last 20 tweets](#tweets)
@@ -30,9 +29,20 @@
 
 
 ## <a name="contribute"></a> Getting started
+To get started running node on your computer and/or contribute to this project, perform the following steps:
+  * [Clone the repository](#clone-repository)
+  * [Install the dependencies](#dependencies)
+  * [Obtain API keys](#obtain-keys)
 
-### <a name="dependencies"></a> Dependencies
-The following are dependencies to the project:
+### <a name="clone-repository"></a> Clone the repository
+The first step is to clone the project repository to a local directory on your computer. To clone the repository, run the following commands:
+<pre>
+  git clone https://github.com/philipstubbs13/liri-node-app.git
+  cd liri-node-app
+</pre>
+
+### <a name="dependencies"></a> Install the dependencies
+The following are dependencies to the project. You must install these in the project root directory to be able to run the app from the command line.
 <ul>
 	<li>Twitter node package (https://www.npmjs.com/package/twitter) - used to send requests to Twitter API and receive tweets.</li>
 	<li>Spotify node package (https://www.npmjs.com/package/node-spotify-api) - used to send requests to Spotify API and receive song information.</li>
@@ -43,14 +53,17 @@ The following are dependencies to the project:
 </ul>
 <p>Version information for each of these packages is available in the package.json file in the project root directory.</p>
 
-### <a name="command-reference"></a> Running LIRI from the command line
+### <a name="obtain-keys"></a> obtain API keys
+To retrieve data to and from the APIs, you need to obtain an API key for Twitter, Spotify, and OMDB.
+
+## <a name="command-reference"></a> Running LIRI from the command line
 <p>In LIRI, there are five commands that you can run. These commands allow you to receive access to a list of tweets from Twitter, song information from Spotify, and movie information from OMDB. Review the command syntax and various arguments you can use for the command you want to run.</p>
 
-#### <a name="command-syntax"></a> Command line syntax
+### <a name="command-syntax"></a> Command line syntax
 <p>The syntax for the LIRI command line interface is:</p>
 <pre>node liri.js <i>command</i> [<i>arguments</i>]</pre>
 
-#### <a name="available-commands"></a> Available commands
+### <a name="available-commands"></a> Available commands
 <p>There are five LIRI commands available from the command line.</p>
 
 Command | Description
@@ -61,7 +74,7 @@ spotify-this-song [song_name] | Shows top 10 songs on Spotify that have specifie
 do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that way.
 help | Shows help information for each command.
 
-#### <a name='arguments'></a> Command line arguments
+### <a name='arguments'></a> Command line arguments
 <p>For the movie-this and spotify-this-song commands, you can pass an argument specifying the name of a movie (for movie-this) or the name of a song (for spotify-this-song).These arguments are optional.</p> 
 <ul>
   <li>If no movie is passed to the movie-this command, then movie information will be displayed for the movie, Mr. Nobody, by default.</li>
