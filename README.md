@@ -29,7 +29,7 @@
 
 
 ## <a name="contribute"></a> Getting started
-To get started running node on your computer and/or contribute to this project, perform the following steps:
+To get started running LIRI on your computer and/or contribute to this project, perform the following steps:
   * [Clone the repository](#clone-repository)
   * [Install the dependencies](#dependencies)
   * [Obtain API keys](#obtain-keys)
@@ -42,18 +42,18 @@ The first step is to clone the project repository to a local directory on your c
 </pre>
 
 ### <a name="dependencies"></a> Install the dependencies
-The following are dependencies to the project. You must install these in the project root directory to be able to run the app from the command line.
+The following npm packages are dependencies to the project. You must install these packages in the project root directory (liri-node-app) to be able to run LIRI from the command line. Refer to the npm documentation (https://www.npmjs.com) for package installation instructions.
 <ul>
-	<li>Twitter node package (https://www.npmjs.com/package/twitter) - used to send requests to Twitter API and receive tweets.</li>
-	<li>Spotify node package (https://www.npmjs.com/package/node-spotify-api) - used to send requests to Spotify API and receive song information.</li>
-	<li>Request node package (https://www.npmjs.com/package/request) - used to send requests to OMDB API and receive movie information.</li>
-	<li>DotEnv node package (https://www.npmjs.com/package/dotenv) - used to load environment variables from a .env file into process.env.</li>
-	<li>Columnify node package (https://www.npmjs.com/package/columnify) - used to display terminal output in columns.</li>
-  <li>Figlet node package (https://www.npmjs.com/package/figlet) - used to convert text into ASCII art - drawings made out of text characters.</li>
+	<li>Twitter npm package (https://www.npmjs.com/package/twitter) - used to send requests to Twitter API and receive tweets.</li>
+	<li>Spotify npm package (https://www.npmjs.com/package/node-spotify-api) - used to send requests to Spotify API and receive song information.</li>
+	<li>Request npm package (https://www.npmjs.com/package/request) - used to send requests to OMDB API and receive movie information.</li>
+	<li>DotEnv npm package (https://www.npmjs.com/package/dotenv) - used to load environment variables from a .env file into process.env.</li>
+	<li>Columnify npm package (https://www.npmjs.com/package/columnify) - used to display terminal output in columns.</li>
+  <li>Figlet npm package (https://www.npmjs.com/package/figlet) - used to convert text into ASCII art - drawings made out of text characters.</li>
 </ul>
 <p>Version information for each of these packages is available in the package.json file in the project root directory.</p>
 
-### <a name="obtain-keys"></a> obtain API keys
+### <a name="obtain-keys"></a> Obtain API keys
 To retrieve data to and from the APIs, you need to obtain an API key for Twitter, Spotify, and OMDB.
 
 ## <a name="command-reference"></a> Running LIRI from the command line
