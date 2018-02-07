@@ -29,9 +29,11 @@
 
 ## <a name="contribute"></a> Getting started
 To get started running LIRI on your computer and/or contribute to this project, perform the following steps:
-  * [Clone the repository](#clone-repository)
-  * [Install the dependencies](#dependencies)
-  * [Obtain API keys](#obtain-keys)
+  1. [Clone the repository](#clone-repository)
+  2. [Install Node](#install-node)
+  3. [Install the dependencies](#dependencies)
+  4. [Obtain API keys](#obtain-keys)
+  5. [Create a .env file](#env-variables)
 
 ### <a name="clone-repository"></a> Clone the repository
 The first step is to clone the project repository to a local directory on your computer. To clone the repository, run the following commands:
@@ -39,6 +41,9 @@ The first step is to clone the project repository to a local directory on your c
   git clone https://github.com/philipstubbs13/liri-node-app.git
   cd liri-node-app
 </pre>
+
+### <a name="install-node"></a> Install Node
+<p>If you don't already have Node installed on your computer, you can install the latest version here: https://nodejs.org/en/</p>
 
 #### <a name="structure-of-project"></a> Structure of the project
 <p>After you clone the repository, navigate to the project root directory (liri-node-app). The project directory structure is setup as follows:</p>
@@ -73,12 +78,12 @@ To retrieve data from the APIs, you need to obtain an API key for Twitter, Spoti
 <p>After you have the API keys, create a file named .env in the project root directory (liri-node-app) with the following contents.</p>
 <p>Replace the values with the API keys you obtained in the previous step.</p>
 <pre>
-# Spotify API keys
+#Spotify API keys
 
 SPOTIFY_ID=your-spotify-id
 SPOTIFY_SECRET=your-spotify-secret
 
-# Twitter API keys
+#Twitter API keys
 
 TWITTER_CONSUMER_KEY=your-twitter-consumer-key
 TWITTER_CONSUMER_SECRET=your-twitter-consumer-secret
@@ -107,7 +112,7 @@ do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that
 help | Shows help information for each command.
 
 ### <a name='arguments'></a> Command line arguments
-<p>For the movie-this and spotify-this-song commands, you can pass an argument specifying the name of a movie (for the movie-this command) or the name of a song (for the spotify-this-song command).These arguments are optional.</p> 
+<p>For the movie-this and spotify-this-song commands, you can pass an argument specifying the name of a movie (for the movie-this command) or the name of a song (for the spotify-this-song command). These arguments are optional.</p> 
 <ul>
   <li>If no movie is passed to the movie-this command, then movie information will be displayed for the movie, Mr. Nobody, by default.</li>
   <li>If no song is passed to the spotify-this-song command, then song information will be displayed for the song, The Sign by Ace of Base, by default.</li>
