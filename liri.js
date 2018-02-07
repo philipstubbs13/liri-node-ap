@@ -36,7 +36,6 @@ var songName = "";
 //Code to access keys information.
 //var client = new Twitter(keys.twitter);
 
-
 //If the liriCommand is movie-this and a movieName is provided...
 //Output information about that movie.
 if (liriCommand === "movie-this") {
@@ -75,16 +74,15 @@ else {
 //Get movie info function... Run this function to get movie info for the specified movie.
 function getMovieInfo() {
 
-	//If the movie name is longer than one word, join the words together on one line so that the ovie name is all one string.
+	//If the movie name is longer than one word, join the words together on one line so that the movie name is all one string.
 	//Rather than having separate lines for each word.
 	for (var i = 3; i < input.length; i++) {
 
 	  if (i > 2 && i < input.length) {
 	    movieName = movieName + " " + input[i];
 	  }
-	  //For example, if the user enters "node liri.js movie this social network", movieName should be "social network" when we log the value of the movieName variable to the terminal.
+	  //For example, if the user enters "node liri.js movie this social network", movieName should be "social network" when the value is logged the terminal.
 	  //console.log(movieName);
-
 	}
 
 	//If no movie name is specified on the command line, then show the movie info for the movie, Mr. Nobody.
@@ -175,7 +173,7 @@ function getLatestTweets(){
 		access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 	});
 
-	//Parameters. Show the tweets from iamPhilStubbs timeline (my timeline). Limit to the last 20 tweets.
+	//Parameters. Show the tweets from my timeline. Limit to the last 20 tweets.
 	var params = {screen_name: 'iamPhilStubbs', limit: 20};
 	client.get('statuses/user_timeline', params, function(error, tweets, response) {
 	  if (!error) {
@@ -214,7 +212,7 @@ function getSongInfo(songName) {
 	}
 
 	//console.log(songName);
-	//Line break to keep log.txt file clean and organized.
+	//Line break to keep log.txt file organized.
 	logData("==========================================================================");
 	//log liriCommand to log.txt.
 	logData("liri command: spotify-this-song");
@@ -225,7 +223,7 @@ function getSongInfo(songName) {
   		secret: process.env.SPOTIFY_SECRET
 	});
 
-	//If no song name is specified on the command line, show song info for "The Sign" by Ace of Base.
+	//If no song name is specified on the command line, show song info for "The Sign" by Ace of Base by default.
 	if (!songName) {
 		//If no song is specified, set the songName variable to "The Sign."
 		songName = "The Sign";
@@ -291,8 +289,7 @@ function getSongInfo(songName) {
 			if (previewSong === null) {
 				previewSong = "Song preview is not available for this song.";
 			}
-			//output the song results.
-			// \r\n is used as a new line character in Windows: https://stackoverflow.com/questions/15433188/r-n-r-n-what-is-the-difference-between-them 
+			//output the song results. 
 			var songResults = 
 			
 				//Line break to keep log.txt file clean and organized.
@@ -338,6 +335,7 @@ function doWhatItSays() {
 
   		// We will then re-display the content as an array for later use.
   		//console.log(songdataArray);
+  		//console.log(songdataArray[1]);
   		//Call the getSongInfo function to display the song info for "I want it that way."
   		getSongInfo(songdataArray[1]);
  	});
