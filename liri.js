@@ -89,6 +89,8 @@ function getMovieInfo() {
 	 if (!movieName) {
 	 	//If no movie is specified, set movieName equal to Mr. Nobody.
 	 	movieName = "Mr Nobody";
+	 	console.log("If you haven't watched Mr. Nobody, then you should: http://www.imdb.com/title/tt0485947/");
+	 	console.log("It's on Netflix!")
 	}
 
 	//Use the figlet npm package to convert the movieName text to art/drawing.
