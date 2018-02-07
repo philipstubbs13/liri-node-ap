@@ -10,7 +10,6 @@
   	* [Command line syntax](#command-syntax)
   	* [Available commands](#available-commands)
     * [Command line arguments](#arguments)
-  * [Structure of the project](#structure-of-project)
   * [Examples](#examples)
   	* [Display last 20 tweets](#tweets)
   	* [Display movie information for specified movie (when movie name is 1 word)](#movie-specified)
@@ -41,6 +40,19 @@ The first step is to clone the project repository to a local directory on your c
   cd liri-node-app
 </pre>
 
+#### <a name="structure-of-project"></a> Structure of the project
+<p>After you clone the repository, navigate to the project root directory (liri-node-app). The project directory structure is setup as follows:</p>
+<ul>
+  <li> <b>keys.js</b>: Allows access to the keys that are used to send and retrieve data to and from the Twitter and Spotify APIs.
+  </li>
+  <li><b>liri.js</b>: Contains the code that is used to run the application from the command line.</li>
+  <li><b>log.txt</b>: App log file. When you run a command, data gets logged to the terminal as well as to the log.txt file in the project's root directory.</li>
+  <li><b>package.json</b>: Lists the project dependencies (third party npm packages) and their version numbers.</li>
+  <li><b>random.txt</b>: Information inside this file is used to run the do-what-it-says command.</li>
+  <li><b>.gitignore</b>: Any file or directory listed inside this file will not be tracked by GitHub when code is committed.</li>
+  <li><b>package-lock.json</b>: Dependency tree for the project. Lists all the dependencies and their versions.</li>
+</ul>
+
 ### <a name="dependencies"></a> Install the dependencies
 The following npm packages are dependencies to the project. You must install these packages in the project root directory (liri-node-app) to be able to run LIRI from the command line. Refer to the npm documentation (https://www.npmjs.com) for package installation instructions.
 <ul>
@@ -54,7 +66,27 @@ The following npm packages are dependencies to the project. You must install the
 <p>Version information for each of these packages is available in the package.json file in the project root directory.</p>
 
 ### <a name="obtain-keys"></a> Obtain API keys
-To retrieve data to and from the APIs, you need to obtain an API key for Twitter, Spotify, and OMDB.
+To retrieve data from the APIs, you need to obtain an API key for Twitter, Spotify, and OMDB.
+
+### <a name="env-variables"></a> Create a .env file
+<p>To run LIRI on your computer, you need to provide your own .env file for it to work.</p>
+<p>After you have the API keys, create a file named .env in the project root directory (liri-node-app) with the following contents.</p>
+<p>Replace the values with the API keys you obtained in the previous step.</p>
+<pre>
+# Spotify API keys
+
+SPOTIFY_ID=your-spotify-id
+SPOTIFY_SECRET=your-spotify-secret
+
+# Twitter API keys
+
+TWITTER_CONSUMER_KEY=your-twitter-consumer-key
+TWITTER_CONSUMER_SECRET=your-twitter-consumer-secret
+TWITTER_ACCESS_TOKEN_KEY=your-access-token-key
+TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
+</pre>
+
+<p>This file will be used by the dotenv package to set what are known as environment variables to the global process.env object in node. These are values that are meant to be specific to the computer that node is running on, and since we are gitignoring this file, they won't be pushed to GitHub — keeping the API key information private.</p>
 
 ## <a name="command-reference"></a> Running LIRI from the command line
 <p>In LIRI, there are five commands that you can run. These commands allow you to receive access to a list of tweets from Twitter, song information from Spotify, and movie information from OMDB. Review the command syntax and various arguments you can use for the command you want to run.</p>
@@ -75,23 +107,10 @@ do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that
 help | Shows help information for each command.
 
 ### <a name='arguments'></a> Command line arguments
-<p>For the movie-this and spotify-this-song commands, you can pass an argument specifying the name of a movie (for movie-this) or the name of a song (for spotify-this-song).These arguments are optional.</p> 
+<p>For the movie-this and spotify-this-song commands, you can pass an argument specifying the name of a movie (for the movie-this command) or the name of a song (for the spotify-this-song command).These arguments are optional.</p> 
 <ul>
   <li>If no movie is passed to the movie-this command, then movie information will be displayed for the movie, Mr. Nobody, by default.</li>
   <li>If no song is passed to the spotify-this-song command, then song information will be displayed for the song, The Sign by Ace of Base, by default.</li>
-</ul>
-
-## <a name="structure-of-project"></a> Structure of the project
-<p>The project directory structure is setup as follows:</p>
-<ul>
-	<li> <b>keys.js</b>: Allows access to the keys that are used to send and retrieve data to and from the Twitter and Spotify APIs.
-	</li>
-	<li><b>liri.js</b>: Contains the code that is used to run the application from the command line.</li>
-	<li><b>log.txt</b>: App log file. When you run a command, data gets logged to the terminal as well as to the log.txt file in the project's root directory.</li>
-	<li><b>package.json</b>: Lists the project dependencies (third party npm packages) and their version numbers.</li>
-	<li><b>random.txt</b>: Information inside this file is used to run the do-what-it-says command.</li>
-  <li><b>.gitignore</b>: Any file or directory listed inside this file will not be committed to GitHub when code is checked in.</li>
-  <li><b>package-lock.json</b>: Dependency tree for the project. Lists all the dependencies and their versions.</li>
 </ul>
 
 ## <a name="examples"></a> Examples
@@ -272,6 +291,8 @@ Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
 ### <a name ="movie-not-specified"></a> Display movie information for Mr. Nobody when no movie is specified
 <pre>
 $ node liri.js movie-this
+If you haven't watched Mr. Nobody, then you should: http://www.imdb.com/title/tt0485947/
+It's on Netflix!
   __  __        _   _       _               _
  |  \/  |_ __  | \ | | ___ | |__   ___   __| |_   _
  | |\/| | '__| |  \| |/ _ \| '_ \ / _ \ / _` | | | |
