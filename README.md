@@ -42,9 +42,6 @@ The first step is to clone the project repository to a local directory on your c
   cd liri-node-app
 </pre>
 
-### <a name="install-node"></a> Install Node
-<p>If you don't already have Node installed on your computer, you can install the latest version here: https://nodejs.org/en/</p>
-
 #### <a name="structure-of-project"></a> Structure of the project
 <p>After you clone the repository, navigate to the project root directory (liri-node-app). The project directory structure is setup as follows:</p>
 <ul>
@@ -57,6 +54,9 @@ The first step is to clone the project repository to a local directory on your c
   <li><b>.gitignore</b>: Any file or directory listed inside this file will not be tracked by GitHub when code is committed.</li>
   <li><b>package-lock.json</b>: Dependency tree for the project. Lists all the dependencies and their versions.</li>
 </ul>
+
+### <a name="install-node"></a> Install Node
+<p>If you don't already have Node installed on your computer, you can install the latest version here: https://nodejs.org/en/</p>
 
 ### <a name="dependencies"></a> Install the dependencies
 The following npm packages are dependencies to the project. You must install these packages in the project root directory (liri-node-app) to be able to run LIRI from the command line. Refer to the npm documentation (https://www.npmjs.com) for package installation instructions.
