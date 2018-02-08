@@ -30,10 +30,10 @@
 ## <a name="contribute"></a> Getting started
 To get started running LIRI on your computer and/or contribute to this project, perform the following steps:
   1. [Clone the repository](#clone-repository)
-  2. [Install Node](#install-node)
+  2. [Install Node.js](#install-node)
   3. [Install the dependencies](#dependencies)
-  4. [Obtain API keys](#obtain-keys)
-  5. [Create a .env file](#env-variables)
+  4. [Create a .env file](#env-variables)
+  5. [Obtain API keys](#obtain-keys)
 
 ### <a name="clone-repository"></a> Clone the repository
 The first step is to clone the project repository to a local directory on your computer. To clone the repository, run the following commands:
@@ -41,6 +41,9 @@ The first step is to clone the project repository to a local directory on your c
   git clone https://github.com/philipstubbs13/liri-node-app.git
   cd liri-node-app
 </pre>
+
+### <a name="install-node"></a> Install Node.js
+<p>If you don't already have Node.js installed on your computer, you can install the latest version here: https://nodejs.org/en/.</p>
 
 #### <a name="structure-of-project"></a> Structure of the project
 <p>After you clone the repository, navigate to the project root directory (liri-node-app). The project directory structure is setup as follows:</p>
@@ -55,9 +58,6 @@ The first step is to clone the project repository to a local directory on your c
   <li><b>package-lock.json</b>: Dependency tree for the project. Lists all the dependencies and their versions.</li>
 </ul>
 
-### <a name="install-node"></a> Install Node
-<p>If you don't already have Node installed on your computer, you can install the latest version here: https://nodejs.org/en/</p>
-
 ### <a name="dependencies"></a> Install the dependencies
 The following npm packages are dependencies to the project. You must install these packages in the project root directory (liri-node-app) to be able to run LIRI from the command line. Refer to the npm documentation (https://www.npmjs.com) for package installation instructions.
 <ul>
@@ -70,13 +70,10 @@ The following npm packages are dependencies to the project. You must install the
 </ul>
 <p>Version information for each of these packages is available in the package.json file in the project root directory.</p>
 
-### <a name="obtain-keys"></a> Obtain API keys
-To retrieve data from the APIs, you need to obtain an API key for Twitter, Spotify, and OMDB.
-
 ### <a name="env-variables"></a> Create a .env file
 <p>To run LIRI on your computer, you need to provide your own .env file for it to work.</p>
 <p>After you have the API keys, create a file named .env in the project root directory (liri-node-app) with the following contents.</p>
-<p>Replace the values with the API keys you obtained in the previous step.</p>
+<p>You will replace the values with the API keys you obtain in the next step.</p>
 <pre>
 #Spotify API keys
 
@@ -92,6 +89,25 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
 </pre>
 
 <p>This file will be used by the dotenv package to set what are known as environment variables to the global process.env object in node. These are values that are meant to be specific to the computer that node is running on, and since we are gitignoring this file, they won't be pushed to GitHub — keeping the API key information private.</p>
+
+### <a name="obtain-keys"></a> Obtain API keys
+<p>To retrieve data from the APIs, you need to obtain an API key for Twitter, Spotify, and OMDB.</p>
+* [Obtain Twitter API keys](#twitter-api)
+
+#### <a name="twitter-api"></a> Obtain Twitter API keys
+<p>To obtain the Twitter API keys:</p>
+<ol>
+  <li>Go to <a href="https://apps.twitter.com/app/new"</a></li>
+  <li>In the <b>Application Details</b> form, enter a name and description for the application.</li>
+  <li>For <b>Website</b>, enter <input>http://google.com</input>.</li>
+  <li>Leave the <b>Callback URL</b> field blank.</li>
+  <li>In the <b>Developer Agreement</b> section, select the check box indicating that you agree to the Twitter Developer Agreement.</li>
+  <li>Click <b>Create your Twitter application</b>.</li>
+  <li>To get your consumer key and secret, click the <b>Keys and Access Tokens</b> tab.</li>
+  <li>Copy and paste the <b>Consumer Key (API Key)</b> and <b>Consumer Secret (API Secret)</b> values into your .env file, replacing the your-twitter-consumer-key and your-twitter-consumer-secret placeholders, respectively.</li>
+  <li>At the bottom of the page, click <b>Create my access token</b> to get your access token key and secret.</li>
+  <li>Copy the <b>Access Token</b> and <b>Access Token Secret</b> displayed at the bottom of the next screen. Paste them into your .env file, replacing the placeholders for your-twitter-access-token-key and your-twitter-access-token-secret, respectively.</li>
+</ol>
 
 ## <a name="command-reference"></a> Running LIRI from the command line
 <p>In LIRI, there are five commands that you can run. These commands allow you to receive access to a list of tweets from Twitter, song information from Spotify, and movie information from OMDB. Review the command syntax and various arguments you can use for the command you want to run.</p>
@@ -502,8 +518,6 @@ Album: The Sign (US Album) [Remastered]
 
   * Node.js (https://nodejs.org/en/)
   * Javascript
-
-## <a name="about-node"></a>About Node.js
 
 ## <a name="command-line-help"></a> Command line help
 <p>Help information is available for each command from the command line.</p>
