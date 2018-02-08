@@ -4038,3 +4038,316 @@ Language: English, Mohawk
 Movie plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
 Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
 =======================================================================================================
+=======================================================================================================
+liri command: movie-this  space jam
+=======================================================================================================
+Title: The Great Space Jam
+Year movie was released: 2011
+IMDB movie rating (out of 10): 6.3
+Rotten Tomatoes rating (out of 100%): Rotten Tomatoes rating not available.
+Filmed in: USA
+Language: English
+Movie plot: N/A
+Actors: Lora Story, Mike Stoklasa, Jocelyn Ridgely, Dan Benavente
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  space jam
+=======================================================================================================
+Title: The Great Space Jam
+Year movie was released: 2011
+IMDB movie rating (out of 10): 6.3
+Rotten Tomatoes rating (out of 100%): Rotten Tomatoes rating not available.
+Filmed in: USA
+Language: English
+Movie plot: N/A
+Actors: Lora Story, Mike Stoklasa, Jocelyn Ridgely, Dan Benavente
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Hunger Games
+=======================================================================================================
+Title: The Hunger Games
+Year movie was released: 2012
+IMDB movie rating (out of 10): 7.2
+Rotten Tomatoes rating (out of 100%): Rotten Tomatoes rating not available.
+Filmed in: USA
+Language: English
+Movie plot: Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.
+Actors: Stanley Tucci, Wes Bentley, Jennifer Lawrence, Willow Shields
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Hunger Games
+=======================================================================================================
+Title: The Hunger Games
+Year movie was released: 2012
+IMDB movie rating (out of 10): 7.2
+Rotten Tomatoes rating (out of 100%): Rotten Tomatoes rating not available.
+Filmed in: USA
+Language: English
+Movie plot: Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.
+Actors: Stanley Tucci, Wes Bentley, Jennifer Lawrence, Willow Shields
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Social Network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+Rotten Tomatoes rating (out of 100%): Rotten Tomatoes rating not available.
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Social Network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+Rotten Tomatoes rating (out of 100%): Rotten Tomatoes rating not available.
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Social Network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+Rotten Tomatoes rating (out of 100%): Rotten Tomatoes rating not available.
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Social Network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+Rotten Tomatoes rating (out of 100%): 96%
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Space Jam
+=======================================================================================================
+Title: The Great Space Jam
+Year movie was released: 2011
+IMDB movie rating (out of 10): 6.3
+Rotten Tomatoes rating (out of 100%): Rotten Tomatoes rating not available.
+Filmed in: USA
+Language: English
+Movie plot: N/A
+Actors: Lora Story, Mike Stoklasa, Jocelyn Ridgely, Dan Benavente
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Social Network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+Rotten Tomatoes rating (out of 100%): Rotten Tomatoes rating not available.
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Social Network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+Rotten Tomatoes rating (out of 100%): Rotten Tomatoes rating not available.
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Social Network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+undefined
+undefined
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Social Network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+Rotten Tomatoes rating (out of 100%): 96%
+Internet Movie Database rating: 7.7/10
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Space Jam
+=======================================================================================================
+Title: The Great Space Jam
+Year movie was released: 2011
+IMDB movie rating (out of 10): 6.3
+Rotten Tomatoes rating (out of 100%): undefined
+Internet Movie Database rating: 6.3/10
+Filmed in: USA
+Language: English
+Movie plot: N/A
+Actors: Lora Story, Mike Stoklasa, Jocelyn Ridgely, Dan Benavente
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Space Jam
+=======================================================================================================
+Title: The Great Space Jam
+Year movie was released: 2011
+IMDB movie rating (out of 10): 6.3
+Rotten Tomatoes rating (out of 100%): undefined
+Internet Movie Database rating: 6.3/10
+Filmed in: USA
+Language: English
+Movie plot: N/A
+Actors: Lora Story, Mike Stoklasa, Jocelyn Ridgely, Dan Benavente
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this  Social Network
+=======================================================================================================
+Title: The Social Network
+Year movie was released: 2010
+IMDB movie rating (out of 10): 7.7
+Rotten Tomatoes rating (out of 100%): 96%
+Filmed in: USA
+Language: English, French
+Movie plot: Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.
+Actors: Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this Mr Nobody
+=======================================================================================================
+Title: Mr. Nobody
+Year movie was released: 2009
+IMDB movie rating (out of 10): 7.9
+Rotten Tomatoes rating (out of 100%): 66%
+Filmed in: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Movie plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+=======================================================================================================
+==========================================================================
+liri command: spotify-this-song
+Top 10 songs on Spotify with the name,  What Ifs
+==========================================================================
+Song #1
+Artist: Kane Brown
+Song title: What Ifs
+Preview song: https://p.scdn.co/mp3-preview/9a1bc6de88d686138b641e6022a4b30c6e75de74?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Kane Brown
+==========================================================================
+==========================================================================
+Song #2
+Artist: Kane Brown
+Song title: What Ifs
+Preview song: https://p.scdn.co/mp3-preview/38694be1b7496f8ff0f308340855c9d8dfc5cf01?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Kane Brown (Deluxe Edition)
+==========================================================================
+==========================================================================
+Song #3
+Artist: Kane Brown
+Song title: What Ifs (Remix)
+Preview song: https://p.scdn.co/mp3-preview/b05441ecafdf40446beb4bc8f8835b1a2421d447?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: What Ifs (Remix)
+==========================================================================
+==========================================================================
+Song #4
+Artist: boyChild
+Song title: Counting What Ifs (feat. Soundmouse) - Original
+Preview song: https://p.scdn.co/mp3-preview/70d964d280f453940f23b78f5bc8233742ebbc2e?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #5
+Artist: boyChild
+Song title: Counting What Ifs (feat. Soundmouse) - Darkhorse Ambient Room Remix
+Preview song: https://p.scdn.co/mp3-preview/307753756f5d7f6cdebc8112a50bf31512bdb7d6?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #6
+Artist: Melanie Baker
+Song title: What Ifs
+Preview song: https://p.scdn.co/mp3-preview/9de234644b9cc922ae56869b0b7f98a2d62c16cf?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: What Ifs
+==========================================================================
+==========================================================================
+Song #7
+Artist: boyChild
+Song title: Counting What Ifs - Vika Remix
+Preview song: https://p.scdn.co/mp3-preview/f672b9ef58af0e8a32f5525ae52e312716253db3?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #8
+Artist: Jaguar Wright
+Song title: The What If's
+Preview song: Song preview is not available for this song.
+Album: Denials Delusions And Decisions
+==========================================================================
+==========================================================================
+Song #9
+Artist: boyChild
+Song title: Counting What Ifs (feat. Soundmouse) - No Beats
+Preview song: https://p.scdn.co/mp3-preview/0d1d44193e56b600f0f549591ddb7145fab70b52?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: Counting What Ifs (feat. Soundmouse)
+==========================================================================
+==========================================================================
+Song #10
+Artist: Ryan Krysiak
+Song title: What Ifs (feat. Brenna Nicole Bone)
+Preview song: https://p.scdn.co/mp3-preview/7b49eeca51d768df6692c553973484c212171015?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: What Ifs (feat. Brenna Nicole Bone)
+==========================================================================
+liri command: spotify-this-song
+==========================================================================
+==========================================================================
+Artist: Ace of Base
+Song title: The Sign
+Preview song: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=090b6f40fd9e40eaa389e1a6e6aa1cfd
+Album: The Sign (US Album) [Remastered]
+
+=======================================================================================================
+liri command: movie-this Mr Nobody
+=======================================================================================================
+Title: Mr. Nobody
+Year movie was released: 2009
+IMDB movie rating (out of 10): 7.9
+Rotten Tomatoes rating (out of 100%): 66%
+Filmed in: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Movie plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+=======================================================================================================
+=======================================================================================================
+liri command: movie-this Mr Nobody
+=======================================================================================================
+Title: Mr. Nobody
+Year movie was released: 2009
+IMDB movie rating (out of 10): 7.9
+Rotten Tomatoes rating (out of 100%): 66%
+Filmed in: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Movie plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+=======================================================================================================

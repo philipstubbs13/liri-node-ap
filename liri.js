@@ -36,13 +36,13 @@ var songName = "";
 //Code to access keys information.
 //var client = new Twitter(keys.twitter);
 
-//If the liriCommand is movie-this and a movieName is provided...
+//If the liriCommand is movie-this...
 //Output information about that movie.
 if (liriCommand === "movie-this") {
 	getMovieInfo();
 }
 
-//If the liriCommand is my-tweets, show last 20 tweets and when they were created in terminal window.
+//If the liriCommand is my-tweets, show last 20 tweets and when they were created...
 else if (liriCommand === "my-tweets") {
 	//log liriCommand to log.txt.
 	logData("liri command: my-tweets");
@@ -102,7 +102,6 @@ function getMovieInfo() {
 	    }
 	    console.log(data)
 	});
-	
 
 	//Then, run a request to the OMDB API with the movieName value.
 	request("http://www.omdbapi.com/?t=" + movieName + "&apikey=trilogy", function(error, response, body) {
@@ -113,12 +112,9 @@ function getMovieInfo() {
 			var movieInfo = JSON.parse(body);
 			//console.log(movieInfo);
 
-			//Create variable for rotten tomatoes rating.
+			// Create variable to hold Rotten Tomatoes Rating.
 			var tomatoRating = movieInfo.Ratings[1].Value;
 
-			if (tomatoRating == 'null') {
-				tomatoRating = "Rating not available for this movie.";
-			}
 			//Output the following information about movieName.
 			// \r\n is used as a new line character in Windows: https://stackoverflow.com/questions/15433188/r-n-r-n-what-is-the-difference-between-them 
 			var movieResult = 
@@ -362,7 +358,7 @@ function logData(logResults) {
 
 }
 
-//Function to show command line help. Using columnify npm package to display contents in columns.
+//Function to show command line help. Install columnify npm package to display contents in columns.
 function showHelp() {
 	//Use figlet npm package to convert text to art/drawing.
 	figlet('LIRI help', function(err, data) {
