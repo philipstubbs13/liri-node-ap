@@ -4,7 +4,6 @@
 
 ## Table of contents
   * [About this project](#about-this-project)
-  * [Live](#live)
   * [Getting started](#contribute)
   * [Running LIRI from the command line](#command-reference)
   	* [Command line syntax](#command-syntax)
@@ -19,7 +18,6 @@
   	* [Display top 10 songs on Spotify for the song, I want it that way](#do-what-it-says)
   	* [Display song information for The Sign by Ace of Base when no song is specified](#song-not-specified)
   * [Technologies used to create app](#technologies-used)
-  * [About Node.js](#about-node)
   * [Command line help](#command-line-help)
   * [Future code development](#feature-enhancements)
   * [Issues](#issues)
@@ -115,7 +113,7 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
   <li>Either log in to your existing Spotify account or create a new one and log in.</li>
   <li>After you are logged in, click <b>CREATE AN APP</b> to register a new application to be used with the Spotify API. You can fill in whatever you like for these fields. When finished, click <b>Complete</b>.</li>
   <li>Copy the <b>Client ID</b> and <b>Client Secret</b> values down somewhere as you'll need them to use the Spotify API and the node-spotify-api package.</li>
-  <li>Paste the <b>Client ID</b> and <b>Client Secret</b> values into your .env file, replacing the placeholders for your your-spotify-id and your-spotify-secret, respectively.</li>
+  <li>Paste the <b>Client ID</b> and <b>Client Secret</b> values into your .env file, replacing the placeholders for your-spotify-id and your-spotify-secret, respectively.</li>
 
 ## <a name="command-reference"></a> Running LIRI from the command line
 <p>In LIRI, there are five commands that you can run. These commands allow you to receive access to a list of tweets from Twitter, song information from Spotify, and movie information from OMDB. Review the command syntax and various arguments you can use for the command you want to run.</p>
@@ -537,5 +535,5 @@ Album: The Sign (US Album) [Remastered]
 <p>The following is a list of potential feature enhancements:</p>
 
 ## <a name ="Issues"></a> Issues
-<p>If you find an issue while using the app or have a request, <a href="https://github.com/philipstubbs13/Project-Longshot/issues/" target="_blank">log the issue or request here</a>. These issues will be addressed in a future code update.</p>
+<p>If you find an issue while using the app or have a request, <a href="https://github.com/philipstubbs13/liri-node-app/issues/" target="_blank">log the issue or request here</a>. These issues will be addressed in a future code update.</p>
 
