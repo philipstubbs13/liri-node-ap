@@ -72,8 +72,8 @@ The following npm packages are dependencies to the project. You must install the
 
 ### <a name="env-variables"></a> Create a .env file
 <p>To run LIRI on your computer, you need to provide your own .env file for it to work.</p>
-<p>After you have the API keys, create a file named .env in the project root directory (liri-node-app) with the following contents.</p>
-<p>You will replace the values with the API keys you obtain in the next step.</p>
+<p>Create a file named .env in the project root directory (liri-node-app) with the following contents.</p>
+<p>You will replace the placeholder values with the API keys you obtain in the next step.</p>
 <pre>
 #Spotify API keys
 
@@ -92,12 +92,12 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
 
 ### <a name="obtain-keys"></a> Obtain API keys
 <p>To retrieve data from the APIs, you need to obtain an API key for Twitter, Spotify, and OMDB.</p>
-* [Obtain Twitter API keys](#twitter-api)
+  * [Obtain Twitter API keys](#twitter-api)
 
 #### <a name="twitter-api"></a> Obtain Twitter API keys
 <p>To obtain the Twitter API keys:</p>
 <ol>
-  <li>Go to <a href="https://apps.twitter.com/app/new"</a></li>
+  <li>Go to https://apps.twitter.com/app/new.</li>
   <li>In the <b>Application Details</b> form, enter a name and description for the application.</li>
   <li>For <b>Website</b>, enter <input>http://google.com</input>.</li>
   <li>Leave the <b>Callback URL</b> field blank.</li>
