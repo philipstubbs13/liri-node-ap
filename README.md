@@ -92,13 +92,12 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
 
 ### <a name="obtain-keys"></a> Obtain API keys
 <p>To retrieve data from the APIs, you need to obtain an API key for Twitter, Spotify, and OMDB.</p>
-  * [Obtain Twitter API keys](#twitter-api)
 
 #### <a name="twitter-api"></a> Obtain Twitter API keys
 <p>To obtain the Twitter API keys:</p>
 <ol>
   <li>Go to https://apps.twitter.com/app/new.</li>
-  <li>In the <b>Application Details</b> form, enter a name and description for the application.</li>
+  <li>In the <b>Application Details</b> form, enter a name and description for the application to be used with the Twitter API.</li>
   <li>For <b>Website</b>, enter <input>http://google.com</input>.</li>
   <li>Leave the <b>Callback URL</b> field blank.</li>
   <li>In the <b>Developer Agreement</b> section, select the check box indicating that you agree to the Twitter Developer Agreement.</li>
@@ -108,6 +107,15 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
   <li>At the bottom of the page, click <b>Create my access token</b> to get your access token key and secret.</li>
   <li>Copy the <b>Access Token</b> and <b>Access Token Secret</b> displayed at the bottom of the next screen. Paste them into your .env file, replacing the placeholders for your-twitter-access-token-key and your-twitter-access-token-secret, respectively.</li>
 </ol>
+
+#### <a name="spotify-api"></a> Obtain Spotify API keys
+<p>To obtain the Spotify API keys:</p>
+<ol>
+  <li>Go to https://developer.spotify.com/my-applications/#!/</li>
+  <li>Either log in to your existing Spotify account or create a new one and log in.</li>
+  <li>After you are logged in, click <b>CREATE AN APP</b> to register a new application to be used with the Spotify API. You can fill in whatever you like for these fields. When finished, click <b>Complete</b>.</li>
+  <li>Copy the <b>Client ID</b> and <b>Client Secret</b> values down somewhere as you'll need them to use the Spotify API and the node-spotify-api package.</li>
+  <li>Paste the <b>Client ID</b> and <b>Client Secret</b> values into your .env file, replacing the placeholders for your your-spotify-id and your-spotify-secret, respectively.</li>
 
 ## <a name="command-reference"></a> Running LIRI from the command line
 <p>In LIRI, there are five commands that you can run. These commands allow you to receive access to a list of tweets from Twitter, song information from Spotify, and movie information from OMDB. Review the command syntax and various arguments you can use for the command you want to run.</p>
