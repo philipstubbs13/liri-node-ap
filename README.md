@@ -7,6 +7,7 @@
   	* [Command line syntax](#command-syntax)
   	* [Available commands](#available-commands)
     * [Command line arguments](#arguments)
+    * [Displaying my tweets](#tweets)
   * [Command line help](#command-line-help)
   * [Examples](#examples)
   	* [Display last 20 tweets](#tweets)
@@ -125,7 +126,7 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
 
 Command | Description
 ------------ | -------------
-my-tweets | Shows the last 20 tweets from Twitter timeline and when they were created.
+my-tweets | Shows the last 20 tweets from Twitter timeline and when they were created. 
 movie-this [movie_name] | Shows information about the specifid movie. The movie name is optional. If no movie is specified, Mr. Nobody is displayed by default.
 spotify-this-song [song_name] | Shows top 10 songs on Spotify that have specified name. Song name is optional. If no song is specified, The Sign by Ace of Base is displayed by default.
 do-what-it-says | Shows the top 10 songs on Spotify for the song, I want it that way.
@@ -138,6 +139,14 @@ help | Shows help information for each command.
   <li>If no song is passed to the spotify-this-song command, then song information will be displayed for the song, The Sign by Ace of Base, by default.</li>
 </ul>
 
+### <a name="tweets"></a> Displaying my tweets
+<p>By default, the application displays tweets from my Twitter account (iamPhilStubbs). If you want LIRI to show tweets from your own Twitter account, replace iamPhilStubbs with your screen name in the liri.js file, as shown in the following example:</p>
+<pre>
+  //Parameters. Show the tweets from my timeline. Limit to the last 20 tweets.
+  var params = {screen_name: 'iamPhilStubbs', limit: 20};
+  client.get('statuses/user_timeline', params, function(error, tweets, response) {
+</pre>
+
 ## <a name="command-line-help"></a> Command line help
 <p>Help information is available for each command from the command line.</p>
 <p>To access the command line help, run the following command in the project's root directory:</p>
@@ -146,12 +155,6 @@ help | Shows help information for each command.
 ## <a name="examples"></a> Examples
 
 ### <a name ="tweets"></a> Display last 20 tweets
-<p>By default, the application displays tweets from my Twitter account (iamPhilStubbs). If you want LIRI to show tweets from your own Twitter account, replace iamPhilStubbs with your screen name in the liri.js file, as shown in the following example:</p>
-<pre>
-  //Parameters. Show the tweets from my timeline. Limit to the last 20 tweets.
-  var params = {screen_name: 'iamPhilStubbs', limit: 20};
-  client.get('statuses/user_timeline', params, function(error, tweets, response) {
-</pre>
 <pre>
 $ node liri.js my-tweets
   __  __         _                     _
