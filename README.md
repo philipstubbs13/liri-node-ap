@@ -9,6 +9,7 @@
   	* [Command line syntax](#command-syntax)
   	* [Available commands](#available-commands)
     * [Command line arguments](#arguments)
+  * [Command line help](#command-line-help)
   * [Examples](#examples)
   	* [Display last 20 tweets](#tweets)
   	* [Display movie information for specified movie (when movie name is 1 word)](#movie-specified)
@@ -18,7 +19,6 @@
   	* [Display top 10 songs on Spotify for the song, I want it that way](#do-what-it-says)
   	* [Display song information for The Sign by Ace of Base when no song is specified](#song-not-specified)
   * [Technologies used to create app](#technologies-used)
-  * [Command line help](#command-line-help)
   * [Future code development](#feature-enhancements)
   * [Issues](#issues)
 
@@ -140,9 +140,20 @@ help | Shows help information for each command.
   <li>If no song is passed to the spotify-this-song command, then song information will be displayed for the song, The Sign by Ace of Base, by default.</li>
 </ul>
 
+## <a name="command-line-help"></a> Command line help
+<p>Help information is available for each command from the command line.</p>
+<p>To access the command line help, run the following command in the project's root directory:</p>
+<pre>node liri.js help</pre>
+
 ## <a name="examples"></a> Examples
 
 ### <a name ="tweets"></a> Display last 20 tweets
+<p>By default, the application displays tweets from my Twitter account (iamPhilStubbs). If you want LIRI to show tweets from your own Twitter account, replace iamPhilStubbs with your screen name in the liri.js file, as shown in the following example:
+<pre>
+  //Parameters. Show the tweets from my timeline. Limit to the last 20 tweets.
+  var params = {screen_name: 'iamPhilStubbs', limit: 20};
+  client.get('statuses/user_timeline', params, function(error, tweets, response) {
+</pre>
 <pre>
 $ node liri.js my-tweets
   __  __         _                     _
@@ -525,15 +536,15 @@ Album: The Sign (US Album) [Remastered]
   * Node.js (https://nodejs.org/en/)
   * Javascript
 
-## <a name="command-line-help"></a> Command line help
-<p>Help information is available for each command from the command line.</p>
-<p>To access the command line help, run the following command in the project's root directory:</p>
-<pre>node liri.js help</pre>
-
 ## <a name="feature-enhancements"></a> Future code development
 <p>Source code will be developed over time to handle new features in the future.</p>
 <p>The following is a list of potential feature enhancements:</p>
 
 ## <a name ="Issues"></a> Issues
 <p>If you find an issue while using the app or have a request, <a href="https://github.com/philipstubbs13/liri-node-app/issues/" target="_blank">log the issue or request here</a>. These issues will be addressed in a future code update.</p>
+
+<p>Known issues</p>
+<ul>
+  <li>The Rotten Tomatoes rating is not available for every movie. For future code update, tell the user that the "Rating is not available" for Rotten Tomatoes rating.</li>
+</ul>
 
