@@ -1,7 +1,5 @@
 # LIRI
 
-<p>LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back tweets, songs, and movies.</p>
-
 ## Table of contents
   * [About this project](#about-this-project)
   * [Getting started](#contribute)
@@ -23,7 +21,7 @@
   * [Issues](#issues)
 
 ## <a name="about-this-project"></a> About this project
-
+<p>LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back tweets, songs, and movies.</p>
 
 ## <a name="contribute"></a> Getting started
 To get started running LIRI on your computer and/or contribute to this project, perform the following steps:
