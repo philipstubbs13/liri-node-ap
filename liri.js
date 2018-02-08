@@ -234,7 +234,7 @@ function getSongInfo(songName) {
 	        console.dir(err);
 	        return;
 	    }
-	    console.log(data)
+	    console.log(data);
 	});
 
 	//Use the Spotify package to search for a song/track. Set search results limit to 10.
@@ -386,6 +386,8 @@ function showHelp() {
 			Command: 'do-what-it-says',
 			Description: "Shows the top 10 songs on Spotify for the song, 'I want it that way.'"
 			}])
+	console.log("==================================================================================================");
 	console.log(helpInfo);
+	console.log("==================================================================================================");
 	console.log(helpColumns);
 }
