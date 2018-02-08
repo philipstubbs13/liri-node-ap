@@ -33,6 +33,9 @@ var movieName = "";
 //If the liriCommand is spotify-this-song, we will need a variable to hold the song name.
 var songName = "";
 
+//Create variable. This variable will contain text to tell user that the information they requested was added to log file.
+var addedToLogFile = "Results added to log.txt file."
+
 //Code to access keys information.
 //var client = new Twitter(keys.twitter);
 
@@ -267,6 +270,7 @@ function getSongInfo(songName) {
 
 		//Output default song info to terminal
 		console.log (defaultSong);
+		console.log(addedToLogFile);
 		//Output default song info to log.txt file.
 		logData(defaultSong);
 		logData("==========================================================================");
