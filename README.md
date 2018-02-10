@@ -3,6 +3,11 @@
 ## Table of contents
   * [About this project](#about-this-project)
   * [Getting started](#contribute)
+    * [Clone the repository](#clone-repository)
+    * [Install Node.js](#install-node)
+    * [Install the dependencies](#dependencies)
+    * [Create a .env file](#env-variables)
+    * [Obtain API keys](#obtain-keys)
   * [Running LIRI from the command line](#command-reference)
   	* [Command line syntax](#command-syntax)
   	* [Available commands](#available-commands)
@@ -43,7 +48,7 @@ The first step is to clone the project repository to a local directory on your c
 <p>If you don't already have Node.js installed on your computer, you can install the latest version here: https://nodejs.org/en/.</p>
 
 #### <a name="structure-of-project"></a> Structure of the project
-<p>After you clone the repository, navigate to the project root directory (liri-node-app). The project directory structure is setup as follows:</p>
+<p>After you clone the repository, navigate to the project root directory (liri-node-app). The project directory structure is set up as follows:</p>
 <ul>
   <li> <b>keys.js</b>: Allows access to the keys that are used to send and retrieve data to and from the Twitter and Spotify APIs.
   </li>
@@ -56,7 +61,9 @@ The first step is to clone the project repository to a local directory on your c
 </ul>
 
 ### <a name="dependencies"></a> Install the dependencies
-The following npm packages are dependencies to the project. You must install these packages in the project root directory (liri-node-app) to be able to run LIRI from the command line. Refer to the npm documentation (https://www.npmjs.com) for package installation instructions.
+<p>The following npm packages are dependencies to the project. You must install these packages in the project root directory (liri-node-app) to be able to run LIRI from the command line.</p>
+<p>After you clone the repository to a local directory, change directory to the project root directory (liri-node-app) and run the following command to install the required npm packages:</p>
+<pre>npm install<pre>
 <ul>
 	<li>Twitter npm package (https://www.npmjs.com/package/twitter) - used to send requests to Twitter API and receive tweets.</li>
 	<li>Spotify npm package (https://www.npmjs.com/package/node-spotify-api) - used to send requests to Spotify API and receive song information.</li>
@@ -88,7 +95,7 @@ TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
 <p>This file will be used by the dotenv package to set what are known as environment variables to the global process.env object in node. These are values that are meant to be specific to the computer that node is running on, and since we are gitignoring this file, they won't be pushed to GitHub — keeping the API key information private.</p>
 
 ### <a name="obtain-keys"></a> Obtain API keys
-<p>To retrieve data from the APIs, you need to obtain an API key for Twitter, Spotify, and OMDB.</p>
+<p>To retrieve data from the APIs, you need to obtain API keys for Twitter and Spotify.</p>
 
 #### <a name="twitter-api"></a> Obtain Twitter API keys
 <p>To obtain the Twitter API keys:</p>
