@@ -63,7 +63,7 @@ The first step is to clone the project repository to a local directory on your c
 ### <a name="dependencies"></a> Install the dependencies
 <p>The following npm packages are dependencies to the project. You must install these packages in the project root directory (liri-node-app) to be able to run LIRI from the command line.</p>
 <p>After you clone the repository to a local directory, change directory to the project root directory (liri-node-app) and run the following command to install the required npm packages:</p>
-<pre>npm install<pre>
+<pre>npm install</pre>
 <ul>
 	<li>Twitter npm package (https://www.npmjs.com/package/twitter) - used to send requests to Twitter API and receive tweets.</li>
 	<li>Spotify npm package (https://www.npmjs.com/package/node-spotify-api) - used to send requests to Spotify API and receive song information.</li>
