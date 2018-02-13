@@ -1,6 +1,7 @@
 # LIRI
 
 ## Table of contents
+  * [Demo](#demo)
   * [About this project](#about-this-project)
   * [Getting started](#contribute)
     * [Clone the repository](#clone-repository)
@@ -25,6 +26,9 @@
   * [Technologies used to create app](#technologies-used)
   * [Future code development](#feature-enhancements)
   * [Issues](#issues)
+
+## <a name="demo"></a> Demo
+Video demo: https://www.youtube.com/watch?v=ZdbBocqG4NE&feature=youtu.be
 
 ## <a name="about-this-project"></a> About this project
 <p>LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back tweets, songs, and movies.</p>
